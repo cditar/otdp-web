@@ -1,0 +1,39 @@
+.section-container-dark {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh; /* Full viewport height */
+    flex-direction: column;
+    display: flex;
+    background-image: url("../../assets/Background.png");
+  }
+
+  .section-container-light {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    background-image: url("../../assets/BackgroundLight.png");
+  }
+  
+  .section-title {
+    font-family: 'Simoncini';
+    font-size: 50px;
+    width: 100%;
+    height: 20vh;
+    color: 'white';
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+
+  .section-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text inside content */
+  }
+  

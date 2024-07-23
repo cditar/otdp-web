@@ -1,0 +1,15 @@
+.button-container {
+    color: white;
+    font-size: 18px;
+    font-family: 'Simoncini';
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 12px;
+    border-radius: 25px;
+    width: 100px;
+    margin-top: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
