@@ -1,0 +1,64 @@
+  #progress {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    transform: rotate(-90deg);
+  }
+  
+  circle {
+    stroke-dashoffset: 0;
+    stroke-width: 15%;
+    fill: none;
+  }
+  
+  .bg {
+    stroke: var(--accent);
+    opacity: 0.3;
+  }
+  
+  #progress .indicator {
+    stroke: var(--accent);
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    height: 320px;
+    overflow-x: scroll;
+    padding: 40px 0;
+    flex: 0 0 100%;
+    margin: 0 auto;
+  }
+
+  
+  li {
+    flex: 0 0 320px;
+    background-color: black;
+    margin: 0 20px 0 0;
+  }
+  
+  li:last-of-type {
+    margin: 0;
+  }
+  
+  .carrousel-container {
+    border-radius: 25px;
+    display: flex;
+    width: 90%;
+    margin-top: -30px;
+    padding-bottom: 30px;
+    flex-direction: row;
+  }
+
+  .scrollable-zoom {
+    background-color: black;
+    transition: transform 0.5s;
+    width: 320px;
+    height: 320px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .scrollable-zoom:hover {
+    transform: scale(1.05);
+  }

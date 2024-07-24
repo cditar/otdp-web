@@ -8,7 +8,7 @@ interface SectionProps {
     titleColor?: string;
 }
 
-const SectionBackground = ({ children, title, titleColor, background }: SectionProps) => {
+export const SectionBackground = ({ children, title, titleColor, background }: SectionProps) => {
     return (
         <div style={{
             width: '100%',
@@ -21,12 +21,10 @@ const SectionBackground = ({ children, title, titleColor, background }: SectionP
             backgroundSize: 'cover',
             filter: 'grayscale(100%)'
         }}>
-                { !!title && <div className='section-title' style={{ color: titleColor}}> {title} </div>}
-            <div className="section-content">
+                { !!title && <div className='section-background-title' style={{ color: titleColor}}> {title} </div>}
+            <div className="section-background-content">
                 {children}
             </div>
         </div>
     );
 };
-
-export default SectionBackground;

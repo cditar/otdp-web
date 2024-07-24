@@ -1,0 +1,14 @@
+.inside-music-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+}
+
+.inside-music-text {
+    margin-left: 50px;
+    text-align: left;
+    font-family: 'Simoncini';
+    font-size: 22px;
+    color: white;
+}

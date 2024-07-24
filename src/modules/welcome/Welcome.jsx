@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import HoverVideoPlayer from 'react-hover-video-player';
 import { motion, useIsPresent } from 'framer-motion';
 import WelcomeVideo from '../../assets/cycleVideo.mp4';
-import Section from '../../components/Section/Section';
+import { Section } from '../../components';
 
 export const Welcome = () => {
     const [isPlayingVideo, setIsPlayingVideo] = useState(true);

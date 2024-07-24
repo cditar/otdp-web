@@ -1,27 +1,29 @@
-/* @font-face {
-  font-family: 'Raccosetta';
-  src: url('./fonts/Raccosetta.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Praktika-Light';
-  src: url('./fonts/Praktika-Light.otf') format('opentype');
-} */
-
 @font-face {
   font-family: 'Simoncini';
   src: url('./assets/fonts/Simoncini-Garamond-Regular.otf') format('opentype'),
-  /* Add additional font formats if necessary */
-  /* Specify the correct path to the font files */
 }
 
 body {
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+  --background: var(--blue);
+  --accent: var(--white);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    overflow-y: hidden;
-    overflow-x: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -31,7 +33,18 @@ code {
     monospace;
 }
 
-.scroll-container {
-  height: 100vh;
-  overflow-y: auto;
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: #000000;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #1D1D1D;
 }

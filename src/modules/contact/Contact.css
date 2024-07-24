@@ -1,0 +1,16 @@
+.contact-container {
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    flex-direction: row;
+    margin-top: -50px;
+    justify-content: space-between;
+}
+
+.contact-text {
+    width: 30vw;
+    text-align: left;
+    font-family: 'Simoncini';
+    font-size: 22px;
+    color: white;
+}

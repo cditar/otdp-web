@@ -1,30 +1,24 @@
-import { Welcome } from "./screens/welcome/Welcome";
-import { Music } from "./screens/music/Music";
 import './index.css';
-import { News } from "./screens/news/News";
-import { Cycle } from "./screens/cycle/Cycle";
-import { Videos } from "./screens/videos/Videos";
-import { Contact } from "./screens/contact/Contact";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { CycleExplore } from "./modules/cycle/CycleExplore";
+import { ScrollableMain } from "./modules/ScrollableMain";
+import { InsideMusic } from './modules/music/InsideMusic';
 
 function App() {
+  const location = useLocation();
 
-  // const RoutesComp = () => (
-  //   <Routes location={location} key={location.pathname}>
-  //     <Route path="/" element={<WelcomeHome />} />
-  //     <Route path="/music" element={<Music />} />
-  //   </Routes>
-  // )
+  const RoutesComp = () => (
+    <Routes location={location} key={location.pathname}>
+      <Route path="/" element={<ScrollableMain />} />
+      <Route path="/ciclo" element={<CycleExplore />} />
+      <Route path="/musica/el-filo" element={<InsideMusic />} />
+    </Routes>
+  )
 
   return (
-    <div className="scroll-container">
-      {/* <RoutesComp /> */}
-      <Welcome />
-      <News />
-      <Music />
-      <Cycle />
-      <Videos />
-      <Contact />
-    </div>
+    <>
+      <RoutesComp />
+    </>
   );
 }
 

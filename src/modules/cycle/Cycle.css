@@ -1,0 +1,68 @@
+.cycle-title {
+    font-size: 60px;
+    font-family: 'Simoncini';
+    color: white;
+}
+
+.cycle-subtitle {
+    font-size: 25px;
+    font-family: 'Simoncini';
+    color: white;
+    margin-top: 25px;
+}
+
+.cycle-explore-year-22 {
+    font-family: 'Simoncini';
+    font-size: 110px;
+    padding: 50px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cycle-explore-year-22:hover {
+    color: #BC336C;
+}
+
+.cycle-explore-year-23 {
+    font-family: 'Simoncini';
+    font-size: 110px;
+    color: white;
+    padding: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cycle-explore-year-23:hover {
+    color: #21B8B8;
+}
+
+.cycle-explore-year-24 {
+    font-family: 'Simoncini';
+    padding: 50px;
+    font-size: 110px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cycle-explore-year-24:hover {
+    color: #0000B6;
+}
+
+.cycle-explore-container {
+    display: flex;  
+    width: 90vw;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-bar {
+    height: 70px;
+    width: 90vw;
+    display: flex;
+    background: white;
+    flex-direction: row;
+    justify-content: space-between;
+}
