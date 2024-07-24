@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Section } from '../../components';
-import { useNavigate, useNavigation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export const CycleExplore = () => {
     const navigate = useNavigate();

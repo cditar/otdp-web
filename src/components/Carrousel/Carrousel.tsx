@@ -1,15 +1,12 @@
 import "./Carrousel.css";
-import { useRef } from "react";
-import { motion, useScroll } from "framer-motion";
 import elFilo from '../../assets/EL_FILO.png';
 import candombe from '../../assets/2.png';
 import mañanita from '../../assets/1.png';
 import { useNavigate } from "react-router-dom";
 
 export const Carrousel = () => {
-  const ref = useRef(null);
+  // const ref = useRef(null);
   const navigate = useNavigate();
-  const { scrollXProgress } = useScroll({ container: ref });
 
   return (
     <div className="carrousel-container">
@@ -25,12 +22,13 @@ export const Carrousel = () => {
         />
       </svg> */}
       <ul>
-        <li onClick={() => navigate('/musica/el-filo')} ><img src={elFilo} className='scrollable-zoom'/></li>
-        <li><img src={candombe} className='scrollable-zoom'/></li>
-        <li><img src={mañanita} className='scrollable-zoom'/></li>
-        <li><img src={elFilo} className='scrollable-zoom'/></li>
-        <li><img src={candombe} className='scrollable-zoom'/></li>
-        <li><img src={mañanita} className='scrollable-zoom'/></li>
+        <li onClick={() => navigate('/musica/el-filo')} >
+          <img alt='disc6' src={elFilo} className='scrollable-zoom'/></li>
+        <li><img alt='disc1' src={candombe} className='scrollable-zoom'/></li>
+        <li><img alt='disc2' src={mañanita} className='scrollable-zoom'/></li>
+        <li><img alt='disc3' src={elFilo} className='scrollable-zoom'/></li>
+        <li><img alt='disc4' src={candombe} className='scrollable-zoom'/></li>
+        <li><img alt='disc5' src={mañanita} className='scrollable-zoom'/></li>
       </ul>
     </div>
   );
