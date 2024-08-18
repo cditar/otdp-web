@@ -3,6 +3,7 @@
     width: 390px;
     height: 390px;
     border-radius: 25px;
+    cursor: pointer;
   }
   
   .zoom:hover {

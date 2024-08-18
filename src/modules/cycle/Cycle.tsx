@@ -16,16 +16,15 @@ export const Cycle = () => {
                 className='welcome-background'
                 key='welcomeVideo'
                 hoverOverlay={
-                    <div style={{
-                        display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
+                    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
                     }}>
                         <div className='cycle-title'>¿qué pasa con la música popular hoy?</div>
                         <Button onClick={() => navigate("/ciclo")} title='explorar' />
                         <div className='cycle-subtitle'>conocé más de nuestro ciclo</div>
                     </div>
                 }
-                hoverOverlayWrapperClassName='overlayWrapper'
-                style={{ display: '-webkit-box', backgroundColor: 'black', objectFit: 'cover', width: '100vw', height: '100vh' }}
+                hoverOverlayWrapperClassName='overlayWrapper' 
+                style={{ filter: 'grayscale(100%)', display: '-webkit-box', backgroundColor: 'black', objectFit: 'cover', width: '100vw', height: '100vh' }}
             />
         </>
         // </SectionBackground>

@@ -33,7 +33,7 @@
   
   li {
     flex: 0 0 320px;
-    background-color: black;
+    background-color: transparent;
     margin: 0 20px 0 0;
   }
   
@@ -51,12 +51,13 @@
   }
 
   .scrollable-zoom {
-    background-color: black;
+    background-color: transparent;
     transition: transform 0.5s;
     width: 320px;
     height: 320px;
     border-radius: 25px;
     margin-bottom: 10px;
+    cursor: pointer;
   }
   
   .scrollable-zoom:hover {

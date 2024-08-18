@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.4",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -23,8 +24,8 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-  "@babel/plugin-proposal-private-property-in-object": "^7.1.0"
-},
+    "@babel/plugin-proposal-private-property-in-object": "^7.1.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

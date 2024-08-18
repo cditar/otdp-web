@@ -11,4 +11,53 @@
     font-family: 'Simoncini';
     font-size: 22px;
     color: white;
+    overflow-y: scroll;
+    width: 50%;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 30px;
+}
+
+.list-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Lato';
+    font-size: 16px;
+    margin-top: -30px;
+}
+
+.list-row-secondary {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Lato';
+    font-size: 13px;
+    margin-top: -23px;
+}
+
+.buttonsRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: 'Lato';
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.lyricText {
+    text-align: left;
+    font-family: 'Lato';
+    font-size: 13px;
+    overflow-y: auto;
+    margin-left: 25px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }

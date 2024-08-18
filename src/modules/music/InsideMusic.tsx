@@ -1,7 +1,34 @@
-import React from 'react';
-import elFilo from '../../assets/EL_FILO.png';
-import { List, Section } from '../../components';
+import React, { useCallback, useState } from 'react';
+import { Button, LyricsModal, Section } from '../../components';
 import './Music.css';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { IconButton } from '@mui/material';
+import { ArrowBackIos } from '@mui/icons-material';
+
+interface Musicians {
+    instrument: string;
+    musician: string;
+}
+
+interface Tracks {
+    trackTitle: string;
+}
+
+interface Album {
+    name: string;
+    description: string;
+    tracks: Tracks[];
+    musicians: Musicians[];
+    edition: string;
+    art: string;
+    design: string;
+    production: string;
+    studio: string;
+}
+
+interface InsideMusicProps {
+    album: Album;
+}
 
 const PlayIcon = () => (
     <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,6 +38,16 @@ const PlayIcon = () => (
 )
 
 export const InsideMusic = () => {
+    const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
+    const navigate = useNavigate();
+    const { state } = useLocation();
+
+    const { album } = state;
+
+    const handleOnClose = useCallback(() => {
+        setModalIsOpen(false);
+    }, []);
+
     return (
         <Section theme='dark'>
             <div className='inside-music-container'>
@@ -22,26 +59,108 @@ export const InsideMusic = () => {
                     flexDirection: 'column',
                     backgroundPositionY: 0,
                     display: 'flex',
-                    backgroundImage: `url(${elFilo})`,
-                    backgroundSize: 'cover',
+                    backgroundImage: `url(${album.art})`,
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'round',
                 }} />
+                <IconButton
+                    style={{
+                        position: 'absolute',
+                        top: '10px',
+                        left: '10px',
+                        color: '#FFFFFF',
+                        backgroundColor: 'white',
+                    }}
+                    onClick={() => navigate('/')} // Go back to the previous page
+                >
+                    <ArrowBackIos fontSize="large" style={{ color: 'black' }} />
+                </IconButton>
                 <div className='inside-music-text'>
-                    <p> música / el filo</p>
-                    
                     <div style={{
+                        marginTop: '15px',
                         display: 'flex',
                         width: '30vw',
                         justifyContent: 'start',
                         alignItems: 'center',
-                        fontSize: 50
+                        fontSize: 50,
+                        height: '10%',
                     }}>
                         <PlayIcon />
-                        <p style={{ marginLeft: 30 }}> El Filo </p>
+                        <p style={{ marginLeft: 20, fontSize: '25px' }}> {album.name} </p>
                     </div>
 
-                    <List />
+                    <div className='list-container'>
+                        {
+                            album.musicians.map((item: Musicians) => (
+                                <div className='list-row'>
+                                    <p style={{ color: '#1A8E8E', marginRight: 10, fontWeight: 600 }}> {item.instrument} </p>
+                                    <p style={{ color: '#D9D9D9', fontWeight: 300 }}> {item.musician} </p>
+
+                                </div>
+                            ))
+                        }
+                    </div>
+
+                    <div className='list-container'>
+                        <div className='list-row-secondary'>
+                            <p> Composición, Dirección y Arreglos: </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {album.direction} </p>
+                        </div>
+                        <div className='list-row-secondary'>
+                            <p> Arte de Tapa: </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {album.design} </p>
+                        </div>
+                        <div className='list-row-secondary'>
+                            <p> Grabación: </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {album.recordedBy} </p>
+                        </div>
+                        <div className='list-row-secondary'>
+                            <p> Mastering: </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {album.mastering} </p>
+                        </div>
+                        <div className='list-row-secondary'>
+                            <p> Mezcla: </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {album.mix} </p>
+                        </div>
+                        <div className='list-row-secondary'>
+                            <p style={{ color: '#D9D9D9', fontWeight: 500 }}> {album.recordedIn} </p>
+                        </div>
+                    </div>
+
+                    <div className='buttonsRow'>
+                        <Button variant onClick={() => console.log('hola')} title='Partitura' />
+                        <Button variant onClick={() => setModalIsOpen(true)} title='Letras' />
+                    </div>
+
                 </div>
             </div>
-        </Section>
+            {
+                modalIsOpen &&
+                <LyricsModal title='Mañanita' onClose={handleOnClose} content={
+                    <div className='lyricText'>
+                        <p>
+                            Mañanita sin sol, mañanita negra.<br />
+                            Ando buscando luz en la tristeza.<br /><br />
+                            Aparece un rayito, cuando él se acerca,<br />
+                            alivia mi dolor esa tibieza.<br />
+                            Alivia mi dolor esa tibieza.<br /><br />
+                            Mariposas cansadas vuelan sobre el abismo,<br />
+                            juegan a hacer en el viento,<br />
+                            se pierden en la nada,<br />
+                            mariposa de sombra rondan mis desvaríos,<br />
+                            el tiempo se desase, todo pierde sentido.<br /><br />
+                            Fumo otro cigarrillo,<br />
+                            mientras el mundo se rompe en la ventana lleno de ruido,<br />
+                            se rompe la ventana lleno de ruido.<br /><br />
+                            Mariposas cansadas vuelan sobre el abismo,<br />
+                            juegan a hacer en el viento,<br />
+                            se pierden en la nada,<br />
+                            mariposa de sombra rondan mis desvaríos,<br />
+                            el tiempo se desase, todo pierde sentido.
+                        </p>
+                    </div>
+                } />
+            }
+        </Section >
     )
 }
