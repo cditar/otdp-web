@@ -10,21 +10,21 @@ interface Musicians {
     musician: string;
 }
 
-interface Tracks {
-    trackTitle: string;
-}
+// interface Tracks {
+//     trackTitle: string;
+// }
 
-interface Album {
-    name: string;
-    description: string;
-    tracks: Tracks[];
-    musicians: Musicians[];
-    edition: string;
-    art: string;
-    design: string;
-    production: string;
-    studio: string;
-}
+// interface Album {
+//     name: string;
+//     description: string;
+//     tracks: Tracks[];
+//     musicians: Musicians[];
+//     edition: string;
+//     art: string;
+//     design: string;
+//     production: string;
+//     studio: string;
+// }
 
 const PlayIcon = () => (
     <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">

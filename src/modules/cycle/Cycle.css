@@ -52,8 +52,6 @@
 
 .cycle-explore-container {
     display: flex;  
-    width: 90vw;
-    margin: 50px;
     justify-content: center;
     align-items: center;
 }
@@ -84,4 +82,27 @@
     height: 100vh;
     background: #0f0f0f;
     transform-origin: top;
+  }
+
+  .cycle-description {
+    color: white;
+    padding: 0px 180px 0px 180px;
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cycle-header {
+    padding-left: 50px;
+    background-color: transparent;
+    height: 70px;
+    width: 100vw;
+    display: 'flex';
+    flex-direction: 'row';
+    position: absolute;
+    top: 0;
+    left: 0;
   }

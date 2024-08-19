@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import './LyricsModal.css'
 
 interface ModalProps {
@@ -13,7 +13,7 @@ export const LyricsModal = ({ title, content, onClose }: ModalProps) => {
             <div className='modalContainer'>
                 <div className='modalTitle'>
                     {title}
-                    <button onClick={onClose}> x </button>
+                    <button className='modalCloseButton' onClick={onClose}> x </button>
                 </div>
                {content}
             </div>
