@@ -20,7 +20,7 @@
     stroke: var(--accent);
   }
   
-  ul {
+  .carrousel-ul {
     display: flex;
     list-style: none;
     height: 320px;
@@ -44,9 +44,8 @@
   .carrousel-container {
     border-radius: 25px;
     display: flex;
-    width: 90%;
-    margin-top: -30px;
-    padding-bottom: 30px;
+    width: 70vw;
+    padding-top: 10vh;
     flex-direction: row;
   }
 
@@ -62,4 +61,23 @@
   
   .scrollable-zoom:hover {
     transform: scale(1.05);
+  }
+
+  .carrousel-li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .carrousel-text {
+    color: white;
+    /* font-family: 'Simoncini'; */
+    font-family: 'Lato';
+    font-size: 12px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
   }

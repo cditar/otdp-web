@@ -4,8 +4,8 @@ import { Carrousel } from '../../components';
 
 export const Music = () => {
     return (
-        <Section theme='dark' title='discografía' titleColor='#D9D9D9'>
-            <Carrousel />
-        </Section>
+            <Section theme='dark' title='discografía' titleColor='#D9D9D9'>
+                <Carrousel />
+            </Section>
     )
 }

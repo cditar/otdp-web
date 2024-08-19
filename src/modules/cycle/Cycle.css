@@ -1,108 +1,149 @@
 .cycle-title {
-    font-size: 60px;
-    font-family: 'Simoncini';
-    color: white;
+  font-size: 60px;
+  font-family: 'Simoncini';
+  color: white;
 }
 
 .cycle-subtitle {
-    font-size: 25px;
-    font-family: 'Simoncini';
-    color: white;
-    margin-top: 25px;
+  font-size: 25px;
+  font-family: 'Simoncini';
+  color: white;
+  margin-top: 25px;
 }
 
 .cycle-explore-year-22 {
-    font-family: 'Simoncini';
-    font-size: 110px;
-    padding: 50px;
-    color: white;
-    transition: 0.5s;
-    cursor: pointer;
+  font-family: 'Simoncini';
+  font-size: 110px;
+  padding: 50px;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .cycle-explore-year-22:hover {
-    color: #BC336C;
+  color: #BC336C;
 }
 
 .cycle-explore-year-23 {
-    font-family: 'Simoncini';
-    font-size: 110px;
-    color: white;
-    padding: 50px;
-    transition: 0.5s;
-    cursor: pointer;
+  font-family: 'Simoncini';
+  font-size: 110px;
+  color: white;
+  padding: 50px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .cycle-explore-year-23:hover {
-    color: #21B8B8;
+  color: #21B8B8;
 }
 
 .cycle-explore-year-24 {
-    font-family: 'Simoncini';
-    padding: 50px;
-    font-size: 110px;
-    color: white;
-    transition: 0.5s;
-    cursor: pointer;
+  font-family: 'Simoncini';
+  padding: 50px;
+  font-size: 110px;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .cycle-explore-year-24:hover {
-    color: #0000B6;
+  color: #0000B6;
 }
 
 .cycle-explore-container {
-    display: flex;  
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+  margin-top: 15vh;
 }
 
 .navigation-bar {
-    height: 70px;
-    width: 90vw;
-    display: flex;
-    background: white;
-    flex-direction: row;
-    justify-content: space-between;
+  height: 70px;
+  width: 90vw;
+  display: flex;
+  background: white;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .slide-in {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #0f0f0f;
-    transform-origin: bottom;
-  }
-  
-  .slide-out {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    background: #0f0f0f;
-    transform-origin: top;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: bottom;
+}
 
-  .cycle-description {
-    color: white;
-    padding: 0px 180px 0px 180px;
-    font-family: 'Lato';
-    font-size: 16px;
-    line-height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: top;
+}
 
-  .cycle-header {
-    padding-left: 50px;
-    background-color: transparent;
-    height: 70px;
-    width: 100vw;
-    display: 'flex';
-    flex-direction: 'row';
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+.cycle-description {
+  color: white;
+  padding: 0px 100px 0px 100px;
+  font-family: 'Lato';
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cycle-header {
+  padding-left: 50px;
+  background-color: transparent;
+  height: 70px;
+  width: 100vw;
+  display: 'flex';
+  flex-direction: 'row';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cycle-scrollable-zoom {
+  background-color: transparent;
+  transition: transform 0.5s;
+  width: 320px;
+  height: 320px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.cycle-scrollable-zoom:hover {
+  transform: scale(1.05);
+}
+
+.cycle-carrousel-container {
+  border-radius: 25px;
+  display: flex;
+  width: 90%;
+  height: 70vh;
+  margin-top: 25vh;
+  flex-direction: row;
+}
+
+.cycle-ul {
+  display: flex;
+  list-style: none;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding: 40px 0px;
+  flex: 0 0 100%;
+  margin: 0 auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
