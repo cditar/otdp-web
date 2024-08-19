@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { Button, LyricsModal, Section } from '../../components';
 import './Music.css';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -24,10 +24,6 @@ interface Album {
     design: string;
     production: string;
     studio: string;
-}
-
-interface InsideMusicProps {
-    album: Album;
 }
 
 const PlayIcon = () => (
