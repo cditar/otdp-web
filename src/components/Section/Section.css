@@ -11,7 +11,6 @@
   .section-container-light {
     width: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
     flex-direction: column;
     height: 100vh;
     display: flex;

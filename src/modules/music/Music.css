@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: left;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .list-row {
@@ -30,6 +30,16 @@
     font-family: 'Lato';
     font-size: 16px;
     margin-top: -30px;
+}
+
+.list-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    font-family: 'Lato';
+    font-size: 17px;
+    margin-bottom: 28px;
 }
 
 .list-row-secondary {

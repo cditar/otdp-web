@@ -8,7 +8,7 @@ import { Contact } from './contact/Contact';
 
 export const ScrollableMain = () => {
     return (
-        <div style={{ height: '100vh', overflowY: 'auto', overflowX: 'hidden' }}>
+        <div>
             <Welcome />
             <News />
             <Music />

@@ -144,6 +144,5 @@
   padding: 40px 0px;
   flex: 0 0 100%;
   margin: 0 auto;
-  overflow-y: hidden;
   scroll-snap-type: x mandatory;
 }

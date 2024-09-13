@@ -1,30 +1,9 @@
 import { useCallback, useState } from 'react';
-import { Button, LyricsModal, Section } from '../../components';
+import { Button, Section } from '../../components';
 import './Music.css';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { IconButton } from '@mui/material';
-import { ArrowBackIos, ArrowDownwardRounded } from '@mui/icons-material';
-
-interface Musicians {
-    instrument: string;
-    musician: string;
-}
-
-// interface Tracks {
-//     trackTitle: string;
-// }
-
-// interface Album {
-//     name: string;
-//     description: string;
-//     tracks: Tracks[];
-//     musicians: Musicians[];
-//     edition: string;
-//     art: string;
-//     design: string;
-//     production: string;
-//     studio: string;
-// }
+import {  useNavigate } from 'react-router-dom';
+import { ArrowDownwardRounded } from '@mui/icons-material';
+import continuidadesImage from '../../assets/Continuidades.jpg';
 
 const PlayIcon = () => (
     <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,12 +12,30 @@ const PlayIcon = () => (
     </svg>
 )
 
-export const InsideMusic = () => {
+const songs = [
+    {
+        name: 'Fanfarria del Olvido',
+    },
+    {
+        name: 'Canción sin Nombre',
+    },
+    {
+        name: 'El plan de Dios',
+    },
+    {
+        name: 'Mar adentro',
+    },
+    {
+        name: 'Vals del laberinto',
+    },
+    {
+        name: 'Balvanera',
+    }
+];
+
+export const Continuidades = () => {
     const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
     const navigate = useNavigate();
-    const { state } = useLocation();
-
-    const { album } = state;
 
     const handleOnClose = useCallback(() => {
         setModalIsOpen(false);
@@ -55,7 +52,7 @@ export const InsideMusic = () => {
                     flexDirection: 'column',
                     backgroundPositionY: 0,
                     display: 'flex',
-                    backgroundImage: `url(${album.art})`,
+                    backgroundImage: `url(${continuidadesImage})`,
                     backgroundSize: 'contain',
                     backgroundRepeat: 'round',
                 }} />
@@ -85,24 +82,14 @@ export const InsideMusic = () => {
                     <ArrowDownwardRounded />
                 </button>
                 <div className='inside-music-text'>
-                    <div style={{
-                        marginTop: '35px',
-                        display: 'flex',
-                        width: '30vw',
-                        justifyContent: 'start',
-                        alignItems: 'center',
-                        height: '10%',
-                    }}>
-                        <p style={{ fontSize: '28px' }}> {album.name} </p>
-                    </div>
+                    <p style={{ fontSize: '48px' }}> Continuidades </p>
 
                     <div className='list-container'>
                         {
-                            album.musicians.map((item: Musicians) => (
-                                <div className='list-row'>
-                                    <p style={{ color: '#1A8E8E', marginRight: 10, fontWeight: 600 }}> {item.instrument} </p>
-                                    <p style={{ color: '#D9D9D9', fontWeight: 300 }}> {item.musician} </p>
-
+                            songs.map((item: any) => (
+                                <div className='list-column'>
+                                    <div style={{ color: '#D9D9D9', fontWeight: 600 }}> {item.name} </div>
+                                    <div style={{ color: '#D9D9D9', fontWeight: 300 }}> Orquesta Típica Di Pasquale ft. Victoria Di Raimondo </div>
                                 </div>
                             ))
                         }
@@ -110,38 +97,21 @@ export const InsideMusic = () => {
 
                     <div className='list-container'>
                         <div className='list-row-secondary'>
-                            <p> Composición, Dirección y Arreglos: </p>
-                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {album.direction} </p>
+                            <p> Edición: </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> Norberto Villagra </p>
                         </div>
                         <div className='list-row-secondary'>
-                            <p> Arte de Tapa: </p>
-                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {album.design} </p>
+                            <p> Mezcla y Mastering: </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> Jorge "Portugués" Da Silva y Norberto Villagra </p>
                         </div>
                         <div className='list-row-secondary'>
-                            <p> Grabación: </p>
-                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {album.recordedBy} </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> Grabado en estudios Fort el 12 de diciembre de 2021. </p>
                         </div>
-                        <div className='list-row-secondary'>
-                            <p> Mastering: </p>
-                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {album.mastering} </p>
-                        </div>
-                        <div className='list-row-secondary'>
-                            <p> Mezcla: </p>
-                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {album.mix} </p>
-                        </div>
-                        <div className='list-row-secondary'>
-                            <p style={{ color: '#D9D9D9', fontWeight: 500 }}> {album.recordedIn} </p>
-                        </div>
-                    </div>
-
-                    <div className='buttonsRow'>
-                        <Button variant onClick={() => console.log('hola')} title='Partitura' />
-                        <Button variant onClick={() => setModalIsOpen(true)} title='Letras' />
                     </div>
 
                 </div>
             </div>
-            {
+            {/* {
                 modalIsOpen &&
                 <LyricsModal title='Mañanita' onClose={handleOnClose} content={
                     <div className='lyricText'>
@@ -167,7 +137,7 @@ export const InsideMusic = () => {
                         </p>
                     </div>
                 } />
-            }
+            } */}
         </Section >
     )
 }
