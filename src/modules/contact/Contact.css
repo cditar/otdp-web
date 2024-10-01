@@ -9,7 +9,7 @@
     /* Adjust as needed */
     text-align: left;
     font-family: 'Simoncini';
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 200;
     color: white;
     z-index: 10;
@@ -57,4 +57,11 @@
 
 .contact-form button:hover {
     background-color: #fff;
+}
+
+.contact-title {
+    font-family: 'Simoncini';
+    font-size: 45px;
+    color: #D9D9D9;
+    margin-bottom: 20px;
 }

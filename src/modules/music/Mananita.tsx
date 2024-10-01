@@ -18,6 +18,10 @@ export const Mananita = () => {
         setModalIsOpen(false);
     }, []);
 
+    const handleNavigateHome = () => {
+        sessionStorage.setItem('scrollPos-/', window.scrollY.toString());
+        navigate('/');
+    };
 
     return (
         <Section theme='dark'>
@@ -35,11 +39,7 @@ export const Mananita = () => {
                     backgroundRepeat: 'round',
                 }} />
                 <button
-                    onClick={() => {
-                        const scrollY = window.scrollY;
-                        navigate('/');
-                        setTimeout(() => window.scrollTo(0, scrollY), 0);
-                    }}
+                    onClick={handleNavigateHome}
                     style={{
                         background: 'white',
                         width: '40px',
@@ -75,7 +75,7 @@ export const Mananita = () => {
                         {
                             mananita.musicians.map((item: Musicians) => (
                                 <div className='list-row'>
-                                    <p style={{ color: '#1A8E8E', marginRight: 10, fontWeight: 600 }}> {item.instrument} </p>
+                                    <p style={{ color: '#4e64b5', marginRight: 10, fontWeight: 600 }}> {item.instrument} </p>
                                     <p style={{ color: '#D9D9D9', fontWeight: 300 }}> {item.musician} </p>
                                 </div>
                             ))

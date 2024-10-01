@@ -29,7 +29,7 @@ export const Contact = () => {
     };
 
     return (
-        <Section theme='dark' title='contacto' titleColor='#D9D9D9'>
+        <Section theme='dark' titleColor='#D9D9D9'>
             <div className='contact-container' style={{
                 position: 'relative',
                 width: '100vw',
@@ -49,9 +49,10 @@ export const Contact = () => {
                 }} />
                 <div className='contact-content'>
                     <div className='contact-text'>
-                        <p><FontAwesomeIcon icon={faUser} /> Juan Ignacio Di Pasquale</p>
-                        <p><FontAwesomeIcon icon={faEnvelope} /> dipasqualemngt@gmail.com</p>
-                        <p><FontAwesomeIcon icon={faInstagram} /> @orquestatipicadipascuale</p>
+                    <h2 className='contact-title'>Contacto</h2>
+                        <p><FontAwesomeIcon icon={faUser} width={18} style={{ marginRight: 18 }}/> Juan Ignacio Di Pasquale</p>
+                        <p><FontAwesomeIcon icon={faEnvelope} width={18} style={{ marginRight: 18 }} /> dipasqualemngt@gmail.com</p>
+                        <p><FontAwesomeIcon icon={faInstagram} width={18} style={{ marginRight: 18 }} /> @orquestatipicadipascuale</p>
                     </div>
                     <form className='contact-form' onSubmit={handleSubmit}>
                         <input

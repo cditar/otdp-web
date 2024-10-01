@@ -14,6 +14,12 @@ export const Candombe = () => {
     const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
     const navigate = useNavigate();
 
+    const handleNavigateHome = () => {
+        sessionStorage.setItem('scrollPos-/', window.scrollY.toString());
+        navigate('/');
+    };
+
+
     const handleOnClose = useCallback(() => {
         setModalIsOpen(false);
     }, []);
@@ -35,11 +41,7 @@ export const Candombe = () => {
                     backgroundRepeat: 'round',
                 }} />
                 <button
-                    onClick={() => {
-                        const scrollY = window.scrollY;
-                        navigate('/');
-                        setTimeout(() => window.scrollTo(0, scrollY), 0);
-                    }}
+                    onClick={handleNavigateHome}
                     style={{
                         background: 'white',
                         width: '40px',

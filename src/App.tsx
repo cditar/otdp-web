@@ -11,11 +11,25 @@ import { Campaign } from './modules/campaign/Campaign';
 import { ElFilo } from './modules/music/ElFilo';
 import { Candombe } from './modules/music/Candombe';
 import { Mananita } from './modules/music/Mananita';
+import { useEffect } from 'react';
 
 function App() {
-  useScrollPosition();
-
   const location = useLocation();
+
+  useEffect(() => {
+    return () => {
+      sessionStorage.setItem(`scrollPos-${location.pathname}`, window.scrollY.toString());
+    };
+  }, [location.pathname]);
+
+  useEffect(() => {
+    const scrollY = sessionStorage.getItem(`scrollPos-${location.pathname}`);
+    if (scrollY) {
+      window.scrollTo(0, parseInt(scrollY));
+    }
+  }, [location.pathname]);
+
+  useScrollPosition();
 
   const RoutesComp = () => (
     <Routes location={location} key={location.pathname}>

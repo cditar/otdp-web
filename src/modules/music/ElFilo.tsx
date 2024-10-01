@@ -1,9 +1,7 @@
-import { useCallback, useState } from 'react';
-import { Button, LyricsModal, Section } from '../../components';
+import { Button, Section } from '../../components';
 import './Music.css';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ArrowDownwardRounded } from '@mui/icons-material';
-import ElFiloImg from '../../assets/ElFilo.png';
 import { elFilo } from '../../const/albums';
 
 interface Musicians {
@@ -14,6 +12,10 @@ interface Musicians {
 export const ElFilo = () => {
     const navigate = useNavigate();
 
+    const handleNavigateHome = () => {
+        sessionStorage.setItem('scrollPos-/', window.scrollY.toString());
+        navigate('/');
+    };
 
     return (
         <Section theme='dark'>
@@ -31,11 +33,7 @@ export const ElFilo = () => {
                     backgroundRepeat: 'round',
                 }} />
                 <button
-                    onClick={() => {
-                        const scrollY = window.scrollY;
-                        navigate('/');
-                        setTimeout(() => window.scrollTo(0, scrollY), 0);
-                    }}
+                    onClick={handleNavigateHome}
                     style={{
                         background: 'white',
                         width: '40px',
