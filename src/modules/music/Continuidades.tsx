@@ -111,33 +111,6 @@ export const Continuidades = () => {
 
                 </div>
             </div>
-            {/* {
-                modalIsOpen &&
-                <LyricsModal title='Mañanita' onClose={handleOnClose} content={
-                    <div className='lyricText'>
-                        <p>
-                            Mañanita sin sol, mañanita negra.<br />
-                            Ando buscando luz en la tristeza.<br /><br />
-                            Aparece un rayito, cuando él se acerca,<br />
-                            alivia mi dolor esa tibieza.<br />
-                            Alivia mi dolor esa tibieza.<br /><br />
-                            Mariposas cansadas vuelan sobre el abismo,<br />
-                            juegan a hacer en el viento,<br />
-                            se pierden en la nada,<br />
-                            mariposa de sombra rondan mis desvaríos,<br />
-                            el tiempo se desase, todo pierde sentido.<br /><br />
-                            Fumo otro cigarrillo,<br />
-                            mientras el mundo se rompe en la ventana lleno de ruido,<br />
-                            se rompe la ventana lleno de ruido.<br /><br />
-                            Mariposas cansadas vuelan sobre el abismo,<br />
-                            juegan a hacer en el viento,<br />
-                            se pierden en la nada,<br />
-                            mariposa de sombra rondan mis desvaríos,<br />
-                            el tiempo se desase, todo pierde sentido.
-                        </p>
-                    </div>
-                } />
-            } */}
         </Section >
     )
 }

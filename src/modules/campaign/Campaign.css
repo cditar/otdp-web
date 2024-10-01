@@ -1,0 +1,72 @@
+.campaign-container {
+    width: calc(100% - 50px);
+    margin: 20px;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.campaign-info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 45%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Simoncini', sans-serif;
+    text-align: left;
+}
+
+.campaign-info h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Simoncini', sans-serif;
+}
+
+.campaign-info h3 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Simoncini', sans-serif;
+}
+
+
+.campaign-info p {
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+.campaign-info li {
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.campaign-visual {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.campaign-image {
+    width: 100%;
+    height: 95%;
+    background-size: cover;
+    margin-top: 10px;
+    background-position: center;
+}
+
+.campaign-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px; 
+}
+
+.campaign-buttons button {
+    flex: 1;
+    margin: 0 4px;
+}
