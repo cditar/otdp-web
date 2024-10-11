@@ -1,15 +1,12 @@
-import React from 'react';
-import { Button, Section } from '../../components';
 import { useNavigate } from 'react-router-dom';
+import { Section } from '../../components';
 
 export const CycleExplore = () => {
     const navigate = useNavigate();
+    
     return (
-        <Section theme='dark'>
+        <Section theme='dark' withArrowBack path='/'>
             <div style={{ display: 'flex', flexDirection: 'column', width: '100vw' }}>
-                <div className='cycle-header'>
-                    <Button title='volver' onClick={() => navigate(-1)} />
-                </div>
                 <div className='cycle-explore-container'>
                     <div className='cycle-explore-year-22' >2022</div>
                     <div className='cycle-explore-year-23'>2023</div>

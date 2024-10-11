@@ -1,7 +1,6 @@
 .section-container-dark {
     width: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
     min-height: 100vh;
     flex-direction: column;
     display: flex;

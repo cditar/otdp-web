@@ -16,11 +16,8 @@ export const CycleByYear = () => {
     
 
     return (
-        <Section theme='dark'>
+        <Section theme='dark' withArrowBack path='/'>
             <div style={{ display: 'flex', flexDirection: 'column', width: '100vw' }}>
-                <div className='cycle-header'>
-                    <Button title='volver' onClick={() => navigate(-1)} />
-                </div>
                 <div className='cycle-explore-container'>
                     <div className="cycle-carrousel-container">
                         <ul ref={scrollRef} className='cycle-ul'>

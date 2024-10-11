@@ -1,7 +1,5 @@
 import { Button, Section } from '../../components';
 import './Music.css';
-import { useNavigate } from 'react-router-dom';
-import { ArrowDownwardRounded } from '@mui/icons-material';
 import { elFilo } from '../../const/albums';
 
 interface Musicians {
@@ -10,15 +8,8 @@ interface Musicians {
 }
 
 export const ElFilo = () => {
-    const navigate = useNavigate();
-
-    const handleNavigateHome = () => {
-        sessionStorage.setItem('scrollPos-/', window.scrollY.toString());
-        navigate('/');
-    };
-
-    return (
-        <Section theme='dark'>
+ return (
+        <Section theme='dark' withArrowBack path='/'>
             <div className='inside-music-container'>
                 <div style={{
                     overflowX: 'hidden',
@@ -32,27 +23,6 @@ export const ElFilo = () => {
                     backgroundSize: 'contain',
                     backgroundRepeat: 'round',
                 }} />
-                <button
-                    onClick={handleNavigateHome}
-                    style={{
-                        background: 'white',
-                        width: '40px',
-                        height: '40px',
-                        border: '1px solid white',
-                        borderRadius: '50%',
-                        padding: '10px',
-                        marginTop: '50px',
-                        cursor: 'pointer',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        transform: 'rotate(90deg)',
-                        position: 'absolute',
-                        top: '-5%',
-                        left: '1%',
-                    }}>
-                    <ArrowDownwardRounded />
-                </button>
                 <div className='inside-music-text'>
                     <div style={{
                         marginTop: '35px',

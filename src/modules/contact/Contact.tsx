@@ -52,7 +52,7 @@ export const Contact = () => {
                     <h2 className='contact-title'>Contacto</h2>
                         <p><FontAwesomeIcon icon={faUser} width={18} style={{ marginRight: 18 }}/> Juan Ignacio Di Pasquale</p>
                         <p><FontAwesomeIcon icon={faEnvelope} width={18} style={{ marginRight: 18 }} /> dipasqualemngt@gmail.com</p>
-                        <p><FontAwesomeIcon icon={faInstagram} width={18} style={{ marginRight: 18 }} /> @orquestatipicadipascuale</p>
+                        <p><FontAwesomeIcon icon={faInstagram} width={18} style={{ marginRight: 18 }} /> @orquestatipicadipasquale</p>
                     </div>
                     <form className='contact-form' onSubmit={handleSubmit}>
                         <input

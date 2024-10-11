@@ -1,5 +1,5 @@
 .campaign-container {
-    width: calc(100% - 50px);
+    width: calc(100% - 150px);
     margin: 20px;
     height: 90vh;
     display: flex;
@@ -16,6 +16,7 @@
     padding-right: 20px;
     font-family: 'Simoncini', sans-serif;
     text-align: left;
+    margin-top: -40px;
 }
 
 .campaign-info h2 {

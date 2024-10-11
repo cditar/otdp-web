@@ -1,46 +1,49 @@
 .zoom {
-    transition: transform 1s;
-    width: 390px;
-    height: 390px;
-    border-radius: 25px;
-    cursor: pointer;
-  }
-  
-  .zoom:hover {
-    transform: scale(1.1);
-  }
+  transition: transform 1s;
+  width: 390px;
+  height: 390px;
+  border-radius: 25px;
+  cursor: pointer;
+}
 
-  .campaign-text-container:hover {
-    transform: scale(1.05);
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.campaign-text-container:hover {
+  transform: scale(1.05);
 }
 
 .campaign-text-container {
-    width: 310px;
-    height: 310px;
-    transition: transform 0.5s;
-    cursor: pointer;
-    margin: 20px;
-    background-color: #302c2c;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Simoncini', sans-serif;
+  width: 310px;
+  height: 310px;
+  transition: transform 0.5s;
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Simoncini', sans-serif;
+  background-image: url('../../assets/014.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
 }
 
 .campaign-title {
-    font-size: 28px;
-    font-weight: bold;
-    font-weight: 300;
-    margin-bottom: 10px;
-    color: white;
+  font-size: 28px;
+  font-weight: bold;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: white;
 }
 
 .campaign-subtitle {
-    font-size: 16px;
-    color: white;
+  font-size: 16px;
+  color: white;
 }

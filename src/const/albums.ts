@@ -9,7 +9,7 @@ export const elFilo = {
     musicians: [
         {
             instrument: "Piano",
-            musician: "Juan Ignacio Di Pascuale",
+            musician: "Juan Ignacio Di Pasquale",
         },
         {
             instrument: "Bandoneón",
@@ -71,7 +71,7 @@ export const candombe = {
     musicians: [
         {
             instrument: "Piano",
-            musician: "Juan Ignacio Di Pascuale",
+            musician: "Juan Ignacio Di Pasquale",
         },
         {
             instrument: "Voz Invitada",
@@ -140,7 +140,7 @@ export const mananita = {
     musicians: [
         {
             instrument: "Piano",
-            musician: "Juan Ignacio Di Pascuale",
+            musician: "Juan Ignacio Di Pasquale",
         },
         {
             instrument: "Voz Invitada",
