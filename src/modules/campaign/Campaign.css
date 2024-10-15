@@ -71,3 +71,60 @@
     flex: 1;
     margin: 0 4px;
 }
+
+@media screen and (max-width: 768px) {
+    .campaign-container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 20px 20px;
+        min-height: 100vh;
+    }
+
+    .campaign-info,
+    .campaign-visual {
+        width: 100%;
+        margin-top: 0;
+        padding: 10px 0;
+    }
+
+    .campaign-info {
+        order: 2;
+        text-align: center;
+    }
+
+    .campaign-visual {
+        order: 1;
+    }
+
+    .campaign-image {
+        height: 300px;
+        margin-top: 0;
+    }
+
+    .campaign-buttons {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .campaign-buttons button {
+        margin: 0 5px;
+    }
+
+    .campaign-info h2 {
+        font-size: 32px;
+    }
+
+    .campaign-info h3 {
+        font-size: 24px;
+    }
+
+    .campaign-info p,
+    .campaign-info li {
+        font-size: 14px;
+    }
+}
