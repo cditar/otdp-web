@@ -27,18 +27,11 @@ export const Continuidades = () => {
     return (
         <Section theme='dark' withArrowBack path='/'>
             <div className='inside-music-container'>
-                <div style={{
-                    overflowX: 'hidden',
-                    overflowY: 'hidden',
-                    width: '50vw',
-                    height: '100vh',
-                    flexDirection: 'column',
-                    backgroundPositionY: 0,
-                    display: 'flex',
-                    backgroundImage: `url(${continuidadesImage})`,
-                    backgroundSize: 'contain',
-                    backgroundRepeat: 'round',
-                }} />
+                <div
+                    className='album-art'
+                    style={{
+                        backgroundImage: `url(${continuidadesImage})`,
+                    }} />
                 <div className='inside-music-text'>
                     <p style={{ fontSize: '48px' }}> Continuidades </p>
 
@@ -63,7 +56,7 @@ export const Continuidades = () => {
                             <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> Jorge "Portugués" Da Silva y Norberto Villagra </p>
                         </div>
                         <div className='list-row-secondary'>
-                            <p style={{ color: '#D9D9D9'}}> Grabado en estudios Fort el 12 de diciembre de 2021. </p>
+                            <p style={{ color: '#D9D9D9' }}> Grabado en estudios Fort el 12 de diciembre de 2021. </p>
                         </div>
                     </div>
 

@@ -19,18 +19,11 @@ export const Mananita = () => {
     return (
         <Section theme='dark' withArrowBack path='/'>
             <div className='inside-music-container'>
-                <div style={{
-                    overflowX: 'hidden',
-                    overflowY: 'hidden',
-                    width: '50vw',
-                    height: '100vh',
-                    flexDirection: 'column',
-                    backgroundPositionY: 0,
-                    display: 'flex',
-                    backgroundImage: `url(${mananita.art})`,
-                    backgroundSize: 'contain',
-                    backgroundRepeat: 'round',
-                }} />
+                <div
+                    className='album-art'
+                    style={{
+                        backgroundImage: `url(${mananita.art})`,
+                    }} />
                 <div className='inside-music-text'>
                     <div style={{
                         marginTop: '35px',

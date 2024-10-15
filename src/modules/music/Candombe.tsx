@@ -19,18 +19,11 @@ export const Candombe = () => {
     return (
         <Section theme='dark' withArrowBack path='/'>
             <div className='inside-music-container'>
-                <div style={{
-                    overflowX: 'hidden',
-                    overflowY: 'hidden',
-                    width: '50vw',
-                    height: '100vh',
-                    flexDirection: 'column',
-                    backgroundPositionY: 0,
-                    display: 'flex',
-                    backgroundImage: `url(${candombe.art})`,
-                    backgroundSize: 'contain',
-                    backgroundRepeat: 'round',
-                }} />
+                <div
+                    className='album-art'
+                    style={{
+                        backgroundImage: `url(${candombe.art})`,
+                    }} />
                 <div className='inside-music-text'>
                     <div style={{
                         marginTop: '35px',

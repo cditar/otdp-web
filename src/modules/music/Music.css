@@ -71,3 +71,100 @@
     margin-right: 20px;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+  .inside-music-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inside-music-text {
+    width: 90%;
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  .buttonsRow {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inside-music-text {
+    font-size: 18px;
+  }
+
+  .list-row {
+    font-size: 14px;
+  }
+
+  .list-column {
+    font-size: 15px;
+  }
+
+  .list-row-secondary {
+    font-size: 12px;
+  }
+
+  .buttonsRow {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .lyricText {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .inside-music-text {
+    font-size: 16px;
+  }
+
+  .list-row {
+    font-size: 12px;
+  }
+
+  .list-column {
+    font-size: 13px;
+  }
+
+  .list-row-secondary {
+    font-size: 11px;
+  }
+
+  .buttonsRow {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .lyricText {
+    font-size: 11px;
+  }
+}
+
+.vertically-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.album-art {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 50vw;
+    height: 100vh;
+    flex-direction: column;
+    background-position-y: 0;
+    display: flex;
+    background-size: contain;
+    background-repeat: round;
+}
+
+@media (max-width: 768px) {
+    .album-art {
+        width: 100vw;
+        height: 50vh;
+    }
+}
