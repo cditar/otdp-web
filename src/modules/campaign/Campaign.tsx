@@ -24,6 +24,7 @@ export const Campaign = () => {
                         <Button title='$10000' variant onClick={() => window.location.href = 'https://mpago.la/1rPdYbM'} />
                         <Button title='$15000' variant onClick={() => window.location.href = 'https://mpago.la/22n1RoK'} />
                     </div>
+                    <h4>Enviar comprobante a producciondipa@gmail.com</h4>
                     <h3>Resumen proyecto</h3>
                     <p>Gracias al acompañamiento de la Universidad Nacional de Lanus (catedra de audiovisión, departamento de artes
                         y secretaria de cultura), tendremos la posibilidad de registrar estos arreglos tan particulares junto a sus

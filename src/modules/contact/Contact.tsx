@@ -51,10 +51,10 @@ export const Contact = () => {
                     <div className='contact-text'>
                     <h2 className='contact-title'>Contacto</h2>
                         <p><FontAwesomeIcon icon={faUser} width={18} style={{ marginRight: 18 }}/> Juan Ignacio Di Pasquale</p>
-                        <p><FontAwesomeIcon icon={faEnvelope} width={18} style={{ marginRight: 18 }} /> dipasqualemngt@gmail.com</p>
+                        <p><FontAwesomeIcon icon={faEnvelope} width={18} style={{ marginRight: 18 }} /> producciondipa@gmail.com</p>
                         <p><FontAwesomeIcon icon={faInstagram} width={18} style={{ marginRight: 18 }} /> @orquestatipicadipasquale</p>
                     </div>
-                    <form className='contact-form' onSubmit={handleSubmit}>
+                    {/* <form className='contact-form' onSubmit={handleSubmit}>
                         <input
                             type="text"
                             name="name"
@@ -87,7 +87,7 @@ export const Contact = () => {
                             required
                         ></textarea>
                         <button type="submit">Enviar</button>
-                    </form>
+                    </form> */}
                 </div>
             </div>
         </Section>

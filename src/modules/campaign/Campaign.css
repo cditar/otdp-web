@@ -80,6 +80,7 @@
         align-items: center;
         justify-content: center;
         margin: 0;
+        margin-bottom: 150px;
         padding: 20px 20px;
         min-height: 100vh;
     }
@@ -121,6 +122,11 @@
 
     .campaign-info h3 {
         font-size: 24px;
+    }
+
+    .campaign-info h3 {
+        margin-top: 15px;
+        font-size: 22px;
     }
 
     .campaign-info p,
