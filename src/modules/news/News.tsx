@@ -7,7 +7,7 @@ export const News = () => {
     return (
         <Section theme='light' title='novedades' titleColor='black'>
             <div className='main-container'>
-                <div className="campaign-text-container">
+                <div className="campaign-text-container" onClick={() => navigate('/campaign')}>
                     <h2 className="campaign-title">Campaña de financiamiento</h2>
                     <p className="campaign-subtitle">Colaborá con nuestro próximo disco</p>
                 </div>

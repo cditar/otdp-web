@@ -12,6 +12,8 @@ import { ElFilo } from './modules/music/ElFilo';
 import { Candombe } from './modules/music/Candombe';
 import { Mananita } from './modules/music/Mananita';
 import { useEffect } from 'react';
+import { CampaignAr } from './modules/campaign/CampaignAR';
+import { CampaignWorld } from './modules/campaign/CampaignWorld';
 
 function App() {
   const location = useLocation();
@@ -37,6 +39,8 @@ function App() {
       <Route path="/ciclo" element={<CycleExplore />} />
       <Route path="/ciclo/2024" element={<CycleByYear />} />
       <Route path='/campaign' element={<Campaign />} />
+      <Route path='/campaign/ar' element={<CampaignAr />} />
+      <Route path='/campaign/world' element={<CampaignWorld />} />
       <Route path="/music" element={<Music />} />
       <Route path="/el-filo" element={<ElFilo />} />
       <Route path="/candombe" element={<Candombe />} />
