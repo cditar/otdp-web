@@ -1,7 +1,7 @@
 import './Welcome.css';
 import HoverVideoPlayer from 'react-hover-video-player';
 import { motion, useIsPresent } from 'framer-motion';
-import WelcomeVideo from '../../assets/cycleVideo.mp4';
+import WelcomeVideo from '../../assets/PREVIEW_OTDP_WEB.mp4';
 import { Section } from '../../components';
 import { WelcomeTitle } from '../../assets/WelcomeTitle';
 
@@ -14,7 +14,7 @@ export const Welcome = () => {
                 videoSrc={WelcomeVideo}
                 focused={true}
                 className='welcome-background'
-                key='welcomeVideo'
+                key='welcomeVideo's
                 hoverOverlayWrapperClassName='overlayWrapper'
                 hoverOverlay={<WelcomeTitle />}
                 style={{ display: '-webkit-box', backgroundColor: 'black', objectFit: 'cover', width: '100vw', height: '100vh' }}

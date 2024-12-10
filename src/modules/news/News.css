@@ -5,6 +5,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 150px;
 }
 
 .zoom {
@@ -24,7 +25,7 @@
 }
 
 .campaign-text-container {
-  width: 310px;
+  width: 510px;
   height: 310px;
   transition: transform 0.5s;
   cursor: pointer;
@@ -37,7 +38,7 @@
   padding: 20px;
   text-align: center;
   font-family: 'Simoncini', sans-serif;
-  background-image: url('../../assets/014.jpg');
+  background-image: url('../../assets/025.jpg');
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.5);

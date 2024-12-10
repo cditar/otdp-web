@@ -5,14 +5,14 @@ import './News.css';
 export const News = () => {
     const navigate = useNavigate();
     return (
-        <Section theme='light' title='novedades' titleColor='black'>
+        <Section theme='dark' title='novedades' titleColor='white'>
             <div className='main-container'>
                 <div className="campaign-text-container" onClick={() => navigate('/campaign')}>
                     <h2 className="campaign-title">Campaña de financiamiento</h2>
                     <p className="campaign-subtitle">Colaborá con nuestro próximo disco</p>
                 </div>
                 <div style={{
-                    width: 350,
+                    width: 550,
                     height: 352,
                     display: 'flex',
                     justifyContent: 'center',
