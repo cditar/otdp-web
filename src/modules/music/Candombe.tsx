@@ -1,6 +1,5 @@
 import { Button, LyricsModal, Section } from '../../components';
-import './Music.css';
-import { candombe } from '../../const/albums';
+import { candombeNiño } from '../../const/albums';
 import { useCallback, useState } from 'react';
 
 interface Musicians {
@@ -22,7 +21,7 @@ export const Candombe = () => {
                 <div
                     className='album-art'
                     style={{
-                        backgroundImage: `url(${candombe.art})`,
+                        backgroundImage: `url(${candombeNiño.original})`,
                     }} />
                 <div className='inside-music-text'>
                     <div style={{
@@ -33,12 +32,12 @@ export const Candombe = () => {
                         alignItems: 'center',
                         height: '10%',
                     }}>
-                        <p style={{ fontSize: '28px' }}> {candombe.name} </p>
+                        <p style={{ fontSize: '28px' }}> {candombeNiño.name} </p>
                     </div>
 
                     <div className='list-container'>
                         {
-                            candombe.musicians.map((item: Musicians) => (
+                            candombeNiño.musicians.map((item: Musicians) => (
                                 <div className='list-row'>
                                     <p style={{ color: '#1A8E8E', marginRight: 10, fontWeight: 600 }}> {item.instrument} </p>
                                     <p style={{ color: '#D9D9D9', fontWeight: 300 }}> {item.musician} </p>
@@ -50,34 +49,34 @@ export const Candombe = () => {
                     <div className='list-container'>
                         <div className='list-row-secondary'>
                             <p> Dirección y Arreglos: </p>
-                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombe.direction} </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombeNiño.direction} </p>
                         </div>
                         <div className='list-row-secondary'>
                             <p> Música: </p>
-                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombe.composedBy} </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombeNiño.composedBy} </p>
                         </div>
                         <div className='list-row-secondary'>
                             <p> Letra: </p>
-                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombe.author} </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombeNiño.author} </p>
                         </div>
                         <div className='list-row-secondary'>
                             <p> Arte de Tapa: </p>
-                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombe.design} </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombeNiño.design} </p>
                         </div>
                         <div className='list-row-secondary'>
                             <p> Grabación: </p>
-                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombe.recordedBy} </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombeNiño.recordedBy} </p>
                         </div>
                         <div className='list-row-secondary'>
                             <p> Mastering: </p>
-                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombe.mastering} </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombeNiño.mastering} </p>
                         </div>
                         <div className='list-row-secondary'>
                             <p> Mezcla: </p>
-                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombe.mix} </p>
+                            <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombeNiño.mix} </p>
                         </div>
                         <div className='list-row-secondary'>
-                            <p style={{ color: '#D9D9D9', fontWeight: 500 }}> {candombe.recordedIn} </p>
+                            <p style={{ color: '#D9D9D9', fontWeight: 500 }}> {candombeNiño .recordedIn} </p>
                         </div>
                     </div>
 

@@ -1,5 +1,4 @@
 import { Button, Section } from '../../components';
-import './Music.css';
 import { elFilo } from '../../const/albums';
 
 interface Musicians {
@@ -14,7 +13,7 @@ export const ElFilo = () => {
                 <div 
                     className='album-art'
                     style={{
-                        backgroundImage: `url(${elFilo.art})`,
+                        backgroundImage: `url(${elFilo.original})`,
                     }} 
                 />
                 <div className='inside-music-text' style={{

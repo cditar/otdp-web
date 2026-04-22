@@ -5,7 +5,6 @@ import { ScrollableMain } from "./modules/ScrollableMain";
 import { AnimatePresence } from 'framer-motion';
 import { CycleByYear } from './modules/cycle/CycleByYear';
 import { useScrollPosition } from './hooks/useScrollPosition';
-import { Music } from './modules/music/Music';
 import { Continuidades } from './modules/music/Continuidades';
 import { Campaign } from './modules/campaign/Campaign';
 import { ElFilo } from './modules/music/ElFilo';
@@ -14,6 +13,7 @@ import { Mananita } from './modules/music/Mananita';
 import { useEffect } from 'react';
 import { CampaignAr } from './modules/campaign/CampaignAR';
 import { CampaignWorld } from './modules/campaign/CampaignWorld';
+import { DiscoInfoPage } from './modules/disco-info/DiscoInfoPage';
 
 function App() {
   const location = useLocation();
@@ -41,11 +41,11 @@ function App() {
       <Route path='/campaign' element={<Campaign />} />
       <Route path='/campaign/ar' element={<CampaignAr />} />
       <Route path='/campaign/world' element={<CampaignWorld />} />
-      <Route path="/music" element={<Music />} />
       <Route path="/el-filo" element={<ElFilo />} />
       <Route path="/candombe" element={<Candombe />} />
       <Route path="/mananita" element={<Mananita />} />
       <Route path="/continuidades" element={<Continuidades />} />
+      <Route path="/disco/:slug" element={<DiscoInfoPage />} />
     </Routes>
   )
 

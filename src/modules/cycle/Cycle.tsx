@@ -13,6 +13,7 @@ export const Cycle = () => {
             <HoverVideoPlayer
                 videoSrc={cycleVideo}
                 focused={true}
+                muted={true}
                 className='welcome-background'
                 key='welcomeVideo'
                 hoverOverlay={

@@ -97,11 +97,11 @@ export const CampaignWorld = () => {
                         <div key={index} className="campaign-card">
                             <h3 className='card-title'>{card.title}</h3>
                             <p className="card-description">{card.description}</p>
-                            <Button width='95%' background='#1A8E8E' color='white' title={card.buttonText} onClick={() => window.location.href = card.paymentLink } variant />
+                            <Button width='70%' background='#1A8E8E' color='white' title={card.buttonText} onClick={() => window.location.href = card.paymentLink } variant />
                         </div>
                     ))}
                 </div>
-                            <div style={{ color: 'white', width: '100%', marginTop: '15px'}}>Si queres aportar otro monto y no queres recompensas podés enviarnos una transferencia a éste alias: <b>Album.ciclo.apuro.mp</b> <br/> Enviar comprobante y datos: <b>producciondipa@gmail.com</b> </div>
+                            <div style={{ color: 'white', width: '100%'}}>Si queres aportar otro monto y no queres recompensas podés enviarnos una transferencia a éste alias: <b>Album.ciclo.apuro.mp</b> <br/> Enviar comprobante y datos: <b>producciondipa@gmail.com</b> </div>
             </div>
         </Section>
     )

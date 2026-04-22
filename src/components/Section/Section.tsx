@@ -25,28 +25,14 @@ export const Section = ({ children, theme, title, titleColor, path, withArrowBac
             {
                 withArrowBack &&
                 <button
+                    className="section-arrow-back"
                     onClick={handleNavigateHome}
-                    style={{
-                        background: 'white',
-                        width: '40px',
-                        height: '40px',
-                        border: '1px solid white',
-                        borderRadius: '50%',
-                        padding: '10px',
-                        marginTop: '50px',
-                        cursor: 'pointer',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        transform: 'rotate(90deg)',
-                        position: 'absolute',
-                        top: '-5%',
-                        left: '1%',
-                    }}>
-                    <ArrowDownwardRounded />
-                </button>
-            } 
-                { !!title && <div className='section-title' style={{ color: titleColor}}> {title} </div>}
+                    style={titleColor ? { background: titleColor, borderColor: titleColor } : undefined}
+                >
+                        <ArrowDownwardRounded />
+                    </button>
+                }
+            {!!title && <div className='section-title' style={{ color: titleColor }}> {title} </div>}
             <div className="section-content">
                 {children}
             </div>

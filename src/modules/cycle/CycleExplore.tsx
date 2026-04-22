@@ -21,7 +21,6 @@ export const CycleExplore = () => {
                     En las ya 20 ediciones del mismo han pasado grandes figuras de la escena, tales como Pipi Piazzolla, Inés Cuello, Florencia Bobadilla Oliva, Noelia Recalde, Nadia Larcher, Marcelo Moguilevsky, Milagros Caliva, Carlos Moscardini, Flor Ruiz, entre otros..
                     <br/>
                     <br/>
-                    ¡Ingresa para acceder a arreglos orquestales creados exclusivamente para ser interpretados por los invitados y la orquesta!
                 </div>
             </div>
         </Section>

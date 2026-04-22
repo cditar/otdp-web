@@ -1,7 +1,7 @@
 .button-container {
     color: white;
     font-size: 18px;
-    font-family: 'Simoncini';
+    font-family: 'Fraunces', Georgia, serif;
     background-color: transparent;
     border: 1px solid white;
     padding: 12px;
@@ -23,7 +23,7 @@
 .button-container-variant {
     color: black;
     font-size: 18px;
-    font-family: 'Lato';
+    font-family: 'Fraunces', Georgia, serif;
     background-color: white;
     border: 1px solid white;
     padding: 10px;

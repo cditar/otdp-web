@@ -1,5 +1,4 @@
 import { Button, LyricsModal, Section } from '../../components';
-import './Music.css';
 import { mananita } from '../../const/albums';
 import { useCallback, useState } from 'react';
 
@@ -22,7 +21,7 @@ export const Mananita = () => {
                 <div
                     className='album-art'
                     style={{
-                        backgroundImage: `url(${mananita.art})`,
+                        backgroundImage: `url(${mananita.original})`,
                     }} />
                 <div className='inside-music-text'>
                     <div style={{

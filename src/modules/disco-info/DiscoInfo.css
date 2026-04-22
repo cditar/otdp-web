@@ -1,0 +1,265 @@
+/* Página de info de disco: ocupa 100% de la pantalla, dividida en imagen | info */
+.disco-info-page {
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  padding: 80px 56px 56px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at top, #252525 0%, #000 60%) !important;
+}
+
+.disco-info-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--disco-accent-color, #ce3957);
+  text-align: left;
+  margin: -72px 0px 0px 40px;
+  flex-shrink: 0;
+}
+
+/* Contenedor imagen + info = 100% pantalla, dividido en dos columnas centradas */
+.disco-info-content {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0;
+  width: 100%;
+  max-width: 1600px;
+  margin: 30px 0px 0px 0px;
+}
+
+/* Mitad izquierda: imagen (ocupa todo lo posible dentro de su sección) */
+.disco-info-disc-wrap {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  container-type: size;
+}
+
+.disco-info-disc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.disco-info-disc-inner {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.disco-info-disc-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Etiqueta debajo del disco */
+.disco-info-disc-caption {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.disco-info-disc-tag {
+  font-size: 24px;
+  color: #dfdfdf;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.disco-info-disc-subtitle {
+  font-size: 12px;
+  color: #c0c0c0;
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+/* Mitad derecha: información (ocupa todo lo posible dentro de su sección) */
+.disco-info-info {
+  flex: 1 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px 0 48px;
+  color: #e8e4df;
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.disco-info-info p {
+  margin: 0 0 8px 0;
+}
+
+/* Formato referencia: instrumento normal, nombre en negrita */
+.disco-info-info .credit-row {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.disco-info-info .credit-row .instrument {
+  font-weight: 400;
+  color: #e8e4df;
+  margin-right: 0.35em;
+}
+
+.disco-info-info .credit-row .name {
+  font-weight: 700;
+  color: #e8e4df;
+}
+
+.disco-info-info .list-row {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  margin: -0px 0px 0px 0px;
+}
+
+.disco-info-info .list-row-label {
+  color: #e8e4df;
+  font-weight: 700;
+  margin-right: 0.35em;
+}
+
+.disco-info-info .list-row-value {
+  color: #e8e4df;
+  font-weight: 400;
+}
+
+.disco-info-info .list-row-value.recorded-in {
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.info-footer {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: var(--disco-accent-color, #ce3957);
+}
+
+.info-footer a {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+}
+
+.info-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive web (mobile lo vemos después) */
+@media (max-width: 1200px) {
+  .disco-info-content {
+    gap: 32px;
+  }
+
+  .disco-info-info {
+    padding-left: 32px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+  /* layout general: pasa a columna */
+  .disco-info-page {
+    background: radial-gradient(circle at top, #111 0%, #000 60%);
+    padding: 15px 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  /* título centrado */
+  .disco-info-title {
+    font-size: 26px;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  /* columnas → stack vertical */
+  .disco-info-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 0;
+  }
+
+  /* imagen centrada */
+  .disco-info-disc-wrap {
+    width: 100%;
+    margin-top: 180px;
+    justify-content: center;
+  }
+
+  .disco-info-disc-inner {
+    max-width: 280px;
+    max-height: 280px;
+  }
+
+  /* caption más compacto */
+  .disco-info-disc-tag {
+    font-size: 18px;
+  }
+
+  .disco-info-disc-subtitle {
+    font-size: 11px;
+  }
+
+  /* info abajo, centrada */
+  .disco-info-info {
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 150px;
+  }
+
+  .disco-info-info .credit-row {
+    font-size: 16px;
+  }
+
+  .disco-info-info .list-row {
+    justify-content: center;
+  }
+
+  /* footer centrado */
+  .info-footer {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 16px;
+  }
+
+  .info-footer a {
+   text-align: center;
+  }
+}

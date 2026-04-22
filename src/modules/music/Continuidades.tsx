@@ -1,6 +1,5 @@
 import { Section } from '../../components';
-import './Music.css';
-import continuidadesImage from '../../assets/Continuidades.jpg';
+import continuidadesOriginal from '../../assets/discos/ContinuidadesOriginal.jpg';
 
 const songs = [
     {
@@ -30,7 +29,7 @@ export const Continuidades = () => {
                 <div
                     className='album-art'
                     style={{
-                        backgroundImage: `url(${continuidadesImage})`,
+                        backgroundImage: `url(${continuidadesOriginal})`,
                     }} />
                 <div className='inside-music-text'>
                     <p style={{ fontSize: '48px' }}> Continuidades </p>

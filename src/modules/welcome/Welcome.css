@@ -31,3 +31,34 @@
   justify-content: center;
   align-items: center;
 }
+
+.welcome-mobile {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.welcome-mobile h1 {
+  color: white;
+  width: 100%;
+  line-height: 1.2;
+  font-size: clamp(28px, 10vw, 56px);
+}
+
+.welcome-mobile .regular {
+  display: block;
+  font-weight: 400;
+}
+
+.welcome-mobile .bold {
+  display: block;
+  font-weight: 700;
+}
