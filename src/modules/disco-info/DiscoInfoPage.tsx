@@ -18,6 +18,10 @@ export const DiscoInfoPage = () => {
       subtitle={disco.subtitle}
       info={getDiscoInfo(disco)}
       color={disco.color}
+      partituraUrl={disco.partituraUrl}
+      letraUrl={disco.letraUrl}
+      youtubeUrl={disco.youtubeUrl}
+      spotifyUrl={disco.spotifyUrl}
     />
   );
 };

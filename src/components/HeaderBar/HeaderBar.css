@@ -40,6 +40,52 @@
 .header-socials {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 12px;
+    gap: 14px;
+}
+
+.header-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    line-height: 1;
+    text-decoration: none;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.header-social-link:hover {
+    opacity: 0.85;
+    transform: scale(1.06);
+}
+
+.header-social-link--instagram {
+    color: #e4405f;
+}
+
+.header-social-link--youtube {
+    color: #ff0000;
+}
+
+.header-social-link--spotify {
+    color: #1db954;
+}
+
+@media (max-width: 768px) {
+    .header-bar {
+        padding: 0 10px;
+        height: 42px;
+    }
+
+    .header-title {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .header-socials {
+        gap: 10px;
+    }
+
+    .header-social-link {
+        font-size: 17px;
+    }
 }

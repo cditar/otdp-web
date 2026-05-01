@@ -47,7 +47,7 @@ export const ScrollableMain = () => {
 
             <News2 />
             <Discografia />
-            <Cycle />
+            {/* <Cycle /> */}
             <Videos />
         </div>
     );

@@ -1,14 +1,14 @@
 import HoverVideoPlayer from 'react-hover-video-player';
 import './News2.css';
-import previewVideo from '../../assets/PREVIEW_OTDP_WEB.mp4';
-import candombeImage from '../../assets/discos/CandombeBailadorOriginal.jpeg';
-import vidaMuerteImage from '../../assets/discos/LavidaLamuerteOriginal.jpg';
-import flyer1 from '../../assets/flyer1.jpg';
+import portadaYoutube from '../../assets/youtube.JPG';
+import portadaInstagram from '../../assets/instagram.JPG';
+import carbonera from '../../assets/carbonera.jpeg';
+import portadaSpotify from '../../assets/spotify.jpeg';
 
 type NovedadItem = {
   tag: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   image: string;
   ft: string;
   videoSrc?: string;
@@ -18,39 +18,36 @@ type NovedadItem = {
 const NOVEDADES_ITEMS: NovedadItem[] = [
   {
     tag: '¿Qué pasa con la música popular hoy?',
-    title: 'La Carbonera',
-    subtitle: '¿Qué pasa con la música popular hoy?',
-    image: flyer1,
-    ft: 'Martes 12, 19 y 26 de Mayo',
-    link: 'http://localhost:3000/disco/el-extranante',
+    title: 'Próxima fecha',
+    image: carbonera,
+    ft: 'Martes 12 de Mayo - 21HS',
+    link: 'https://www.passline.com/eventos/orquesta-tipica-di-pasquale-en-la-carbonera',
   },
   {
     tag: 'Instagram',
     title: 'Instagram',
     subtitle: ' ',
-    image: candombeImage,
+    image: portadaInstagram,
     ft: ' ',
+    link: 'https://www.instagram.com/orquestatipicadipasquale/'
   },
   {
     tag: 'Youtube',
     title: 'Youtube',
     subtitle: ' ',
-    image: candombeImage,
+    image: portadaYoutube,
     ft: ' ',
-    videoSrc: previewVideo,
+    //videoSrc: previewVideo,
     link: 'https://www.youtube.com/@orquestatipicadipasquale.',
   },
   {
     tag: 'Spotify',
     title: 'Spotify',
     subtitle: ' ',
-    image: vidaMuerteImage,
+    image: portadaSpotify,
     ft: ' ',
   },
 ];
-
-const CARD_WIDTH_PX = 280;
-const CARD_HEIGHT_PX = 340; /* solo barra + artwork, título va fuera */
 
 export const News2 = () => {
   const onClick = (item: NovedadItem) => {
@@ -64,27 +61,15 @@ export const News2 = () => {
       <div className="novedades-frame">
         <div className="novedades-main">
           <h2 className="novedades-title">Novedades</h2>
-
             <div className="novedades-track">
                 {NOVEDADES_ITEMS.map((item, i) => (
                   <div
                     key={i}
                     className="novedades-slide"
-                    style={{ minWidth: CARD_WIDTH_PX, cursor: item.link ? 'pointer' : 'default' }}
+                    style={{ cursor: item.link ? 'pointer' : 'default' }}
                     onClick={() => onClick(item)}
                   >
-                    <article
-                      className="novedades-card"
-                      style={{
-                        width: CARD_WIDTH_PX,
-                        minWidth: CARD_WIDTH_PX,
-                        height: CARD_HEIGHT_PX,
-                        minHeight: CARD_HEIGHT_PX,
-                      }}
-                    >
-                      <div className="novedades-card-title-bar">
-                        <span className="novedades-card-tag">. {item.tag} .</span>
-                      </div>
+                    <article className="novedades-card">
                       <div className="novedades-card-artwork">
                         {item.videoSrc ? (
                           <HoverVideoPlayer
@@ -116,7 +101,7 @@ export const News2 = () => {
                     </article>
                     <div className="novedades-card-footer">
                       <h3 className="novedades-card-footer-title">{item.title}</h3>
-                      <p className="novedades-card-footer-ft">({item.ft})</p>
+                      <p className="novedades-card-footer-ft">{item.ft}</p>
                     </div>
                   </div>
                 ))}
