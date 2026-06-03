@@ -2,8 +2,6 @@ import { ReactNode } from 'react';
 import type { DiscoData } from '../../const/discos';
 
 function renderAlbumInfo(album: DiscoData['album'], disco: DiscoData): ReactNode {
-  const discWithLinks = disco as DiscoData & { partituraUrl?: string; letraUrl?: string };
-
   return (
     <>  
     {album.map((item, i) => (

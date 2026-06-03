@@ -1,14 +1,6 @@
 import { elFilo, candombeNiño, mananita, elExtrañante, musicaPopular, continuidades, candombeBailador, laVidaLaMuerte, Regreso } from './albums';
-import ElFiloPortada from '../assets/discos/ElFiloPortada.jpg';
-import ElFiloOriginal from '../assets/discos/ElFiloOriginal.png';
-import CandombeNiñoPortada from '../assets/discos/CandombeNiñoPortada.jpg';
-import CandombeNiñoOriginal from '../assets/discos/CandombeNiñoOriginal.jpg';
-import MananitaPortada from '../assets/discos/MañanitaPortada.jpg';
-import MananitaOriginal from '../assets/discos/MañanitaOriginal.jpg';
 import ElExtrañantePortada from '../assets/discos/ExtrañantePortada.jpg';
 import ElExtrañanteOriginal from '../assets/discos/ExtrañanteOriginal.jpeg';
-import MusicaPopularOriginal from '../assets/discos/MusicaPopularOriginal.png';
-import ContinuidadesOriginal from '../assets/discos/ContinuidadesOriginal.jpg';
 import CandombeBailadorPortada from '../assets/discos/CandombeBailadorPortada.jpg';
 import CandombeBailadorOriginal from '../assets/discos/CandombeBailadorOriginal.jpeg';
 import LaVidaLaMuertePortada from '../assets/discos/LavidaLamuertePortada.jpg';

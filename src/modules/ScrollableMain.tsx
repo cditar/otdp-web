@@ -1,8 +1,7 @@
-import React, { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { Welcome } from './welcome/Welcome';
 import { News2 } from './news/News2';
 import { Discografia } from './discografia/Discografia';
-import { Cycle } from './cycle/Cycle';
 import { Videos } from './videos/Videos';
 import { HeaderBar } from '../components/HeaderBar/HeaderBar';
 
@@ -13,14 +12,11 @@ export const ScrollableMain = () => {
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                // 👇 si Welcome está visible → ocultar header
-                // 👇 si NO está visible → mostrar header
                 setShowHeader(!entry.isIntersecting);
             },
             {
                 root: null,
                 threshold: 0.2, 
-                // un poco de margen para que no “salte” demasiado temprano
             }
         );
 

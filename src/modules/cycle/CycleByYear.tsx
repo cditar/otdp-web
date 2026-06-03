@@ -1,5 +1,4 @@
-import React from 'react';
-import { Button, Section } from '../../components';
+import { Section } from '../../components';
 import { useNavigate } from 'react-router-dom';
 import cycle202403 from '../../assets/ciclo/202403.jpg'
 import cycle202404 from '../../assets/ciclo/202404.jpg'
@@ -11,7 +10,6 @@ import useHorizontalScroll from '../../hooks/useHorizontalScroll';
 
 
 export const CycleByYear = () => {
-    const navigate = useNavigate();
     const scrollRef = useHorizontalScroll(5);
     
 

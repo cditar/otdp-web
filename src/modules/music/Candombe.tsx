@@ -76,7 +76,7 @@ export const Candombe = () => {
                             <p style={{ color: '#D9D9D9', marginLeft: '5px' }}> {candombeNiño.mix} </p>
                         </div>
                         <div className='list-row-secondary'>
-                            <p style={{ color: '#D9D9D9', fontWeight: 500 }}> {candombeNiño .recordedIn} </p>
+                            <p style={{ color: '#D9D9D9', fontWeight: 500 }}> {candombeNiño.recordedIn} </p>
                         </div>
                     </div>
 

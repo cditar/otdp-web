@@ -17,13 +17,6 @@ type NovedadItem = {
 
 const NOVEDADES_ITEMS: NovedadItem[] = [
   {
-    tag: '¿Qué pasa con la música popular hoy?',
-    title: 'Próxima fecha',
-    image: carbonera,
-    ft: 'Martes 12 de Mayo - 21HS',
-    link: 'https://www.passline.com/eventos/orquesta-tipica-di-pasquale-en-la-carbonera',
-  },
-  {
     tag: 'Instagram',
     title: 'Instagram',
     subtitle: ' ',

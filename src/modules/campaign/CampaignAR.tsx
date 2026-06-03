@@ -49,21 +49,6 @@ export const CampaignAr = () => {
         },
     ];
 
-    const menuItems = [
-        {
-            title: 'Story',
-            description: 'Conocé nuestra historia'
-        },
-        {
-            title: 'FAQ',
-            description: 'Preguntas frecuentes'
-        },
-        {
-            title: 'Contact',
-            description: 'Contactanos'
-        }
-    ];
-
     return (
         <Section theme='dark' withArrowBack path='/' >
             <div className="campaign-container">
