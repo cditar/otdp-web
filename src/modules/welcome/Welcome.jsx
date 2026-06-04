@@ -2,9 +2,10 @@ import './Welcome.css';
 import HoverVideoPlayer from 'react-hover-video-player';
 import { motion, useIsPresent } from 'framer-motion';
 import { Section } from '../../components';
-import { WelcomeTitle } from '../../assets/WelcomeTitle';
 import welcomeVideo from '../../assets/welcomeVideo.mp4'
 import { useIsDesktop } from '../../hooks/useIsDesktop';
+import { BlurIn } from '../../assets/animations/BlurIn';
+import { HoverLetters } from '../../assets/animations/HoverLetters';
 
 
 export const Welcome = () => {
@@ -22,7 +23,7 @@ export const Welcome = () => {
                     className='welcome-background'
                     key='welcomeVideo'
                     hoverOverlayWrapperClassName='overlayWrapper'
-                    hoverOverlay={<WelcomeTitle />}
+                    hoverOverlay={<BlurIn><HoverLetters text='Orquesta Típica Di Pasquale' /></BlurIn>}
                     style={{ 
                         display: '-webkit-box', 
                         backgroundColor: 'black', 

@@ -17,6 +17,25 @@
     animation: fadeDown 400ms ease-out;
 }
 
+.header-hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+    margin-right: 12px;
+}
+
+.header-hamburger:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
 @keyframes fadeDown {
     from {
         opacity: 0;
@@ -69,10 +88,106 @@
     color: #1db954;
 }
 
+/* Menú pantalla completa */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s ease, transform 0.2s ease;
+    z-index: 10;
+}
+
+.menu-close-button:hover {
+    opacity: 0.7;
+    transform: rotate(90deg);
+}
+
+.menu-split-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.menu-left {
+    width: 50%;
+    height: 100%;
+    background: #0A0A0A;
+    display: flex;
+    align-items: center;
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu-item {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    cursor: pointer;
+    padding-left: 40px;
+    transition: transform 0.3s ease;
+    text-align: left;
+    position: relative;
+    overflow: visible;
+}
+
+.menu-item:hover {
+    transform: translateX(20px);
+}
+
+.menu-right {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.menu-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 0.3s ease;
+}
+
 @media (max-width: 768px) {
     .header-bar {
         padding: 0 10px;
         height: 42px;
+    }
+
+    .header-hamburger {
+        font-size: 20px;
+        margin-right: 8px;
+        padding: 6px;
     }
 
     .header-title {
@@ -86,5 +201,33 @@
 
     .header-social-link {
         font-size: 17px;
+    }
+
+    .menu-close-button {
+        top: 15px;
+        right: 15px;
+        font-size: 28px;
+    }
+
+    .menu-split-container {
+        flex-direction: column;
+    }
+
+    .menu-left {
+        width: 100%;
+        height: 60%;
+    }
+
+    .menu-nav {
+        gap: 24px;
+    }
+
+    .menu-item {
+        font-size: 2rem;
+    }
+
+    .menu-right {
+        width: 100%;
+        height: 40%;
     }
 }

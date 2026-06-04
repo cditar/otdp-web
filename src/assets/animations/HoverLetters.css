@@ -1,0 +1,28 @@
+.hover-letters-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  cursor: default;
+}
+
+.hover-letter {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .hover-letters-container {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hover-letters-container {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+}

@@ -1,0 +1,28 @@
+.novedades-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0A0A0A;
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+}
+
+.novedades-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 60px;
+    font-weight: 400;
+    color: #ce3957;
+    padding-left: 20px;
+    letter-spacing: -0.05em;
+}
+
+.novedades-header {
+    position: sticky;
+    display: flex;
+    height: 90px;
+    background-color: #0A0A0A;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}

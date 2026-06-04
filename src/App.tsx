@@ -14,9 +14,12 @@ import { useEffect } from 'react';
 import { CampaignAr } from './modules/campaign/CampaignAR';
 import { CampaignWorld } from './modules/campaign/CampaignWorld';
 import { DiscoInfoPage } from './modules/disco-info/DiscoInfoPage';
+import { motion, useScroll } from 'framer-motion';
+import { Novedades } from './modules/novedades/Novedades';
 
 function App() {
   const location = useLocation();
+  const { scrollYProgress } = useScroll();
 
   useEffect(() => {
     return () => {
@@ -35,8 +38,9 @@ function App() {
 
   const RoutesComp = () => (
     <Routes location={location} key={location.pathname}>
-      <Route  path="/" element={<ScrollableMain />} />
+      <Route path="/" element={<ScrollableMain />} />
       <Route path="/ciclo" element={<CycleExplore />} />
+      <Route path="/novedades" element={<Novedades />} />
       <Route path="/ciclo/2024" element={<CycleByYear />} />
       <Route path='/campaign' element={<Campaign />} />
       <Route path='/campaign/ar' element={<CampaignAr />} />
@@ -51,6 +55,20 @@ function App() {
 
   return (
     <AnimatePresence mode='wait'>
+      <motion.div
+        id="scroll-indicator"
+        style={{
+          scaleX: scrollYProgress,
+          position: "fixed",
+          zIndex: 999999,
+          top: 100,
+          left: 0,
+          right: 0,
+          height: 10,
+          originX: 0,
+          backgroundColor: "var(--hue-1)",
+        }}
+      />
       <RoutesComp />
     </AnimatePresence>
   );
