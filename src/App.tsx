@@ -1,9 +1,7 @@
 import './index.css';
 import { Route, Routes, useLocation } from "react-router-dom";
-import { CycleExplore } from "./modules/cycle/CycleExplore";
 import { ScrollableMain } from "./modules/ScrollableMain";
 import { AnimatePresence } from 'framer-motion';
-import { CycleByYear } from './modules/cycle/CycleByYear';
 import { useScrollPosition } from './hooks/useScrollPosition';
 import { Continuidades } from './modules/music/Continuidades';
 import { Campaign } from './modules/campaign/Campaign';
@@ -16,6 +14,9 @@ import { CampaignWorld } from './modules/campaign/CampaignWorld';
 import { DiscoInfoPage } from './modules/disco-info/DiscoInfoPage';
 import { motion, useScroll } from 'framer-motion';
 import { Novedades } from './modules/novedades/Novedades';
+import { Bio } from './modules/bio/Bio';
+import { Press } from './modules/press/Press';
+import { MusicaPopular } from './modules/musica-popular/MusicaPopular';
 
 function App() {
   const location = useLocation();
@@ -39,9 +40,7 @@ function App() {
   const RoutesComp = () => (
     <Routes location={location} key={location.pathname}>
       <Route path="/" element={<ScrollableMain />} />
-      <Route path="/ciclo" element={<CycleExplore />} />
       <Route path="/novedades" element={<Novedades />} />
-      <Route path="/ciclo/2024" element={<CycleByYear />} />
       <Route path='/campaign' element={<Campaign />} />
       <Route path='/campaign/ar' element={<CampaignAr />} />
       <Route path='/campaign/world' element={<CampaignWorld />} />
@@ -50,6 +49,9 @@ function App() {
       <Route path="/mananita" element={<Mananita />} />
       <Route path="/continuidades" element={<Continuidades />} />
       <Route path="/disco/:slug" element={<DiscoInfoPage />} />
+      <Route path="/bio" element={<Bio />} />
+      <Route path="/prensa" element={<Press />} />
+      <Route path="/que-pasa-con-la-musica-popular-hoy" element={<MusicaPopular />} />
     </Routes>
   )
 

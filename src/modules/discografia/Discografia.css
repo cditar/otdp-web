@@ -24,10 +24,10 @@
 /* Lista de discos */
 .discografia-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   /* 4 columnas */
-  gap: 20px;
-  max-width: 1200px;
+  gap: 10px;
+  max-width: 1100px;
 }
 
 /* Cada ítem de disco */
@@ -38,7 +38,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .discografia-item-graphic {
@@ -53,27 +52,36 @@
   transition: opacity 0.2s ease;
 }
 
-.discografia-item-clickable:hover {
-  opacity: 0.85;
+.discografia-item-clickable:hover .discografia-cover,
+.discografia-item-clickable:hover .discografia-cover-album {
+  transform: scale(1);
 }
 
 /* Contenedor del gráfico (portada + vinilo) */
+.discografia-item-graphic {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
 .discografia-cover {
   display: block;
-  width: 440px;
-  height: 290px;
+  width: 420px;
+  height: 270px;
   object-fit: cover;
   border-radius: 12px;
+  transition: transform 0.3s ease;
 }
 
 .discografia-cover-album {
   display: block;
   width: 340px;
   height: 340px;
-  margin-bottom: 35px;
   object-fit: cover;
   border-radius: 12px;
+  transition: transform 0.3s ease;
 }
 
 /* Línea separadora vertical */
@@ -87,44 +95,67 @@
 
 /* Contenido de texto */
 .discografia-item-content {
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  margin-top: -40px;
-  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+  border-radius: 6px;
+  margin: 0;
+}
+
+.discografia-item-graphic:hover .discografia-item-content {
+  opacity: 1;
 }
 
 .discografia-item-title {
   font-family: 'Fraunces', Georgia, serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: #1a1a1a;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin: 0 0 8px 0;
 }
 
 .discografia-item-subtitle {
   font-family: 'Fraunces', Georgia, serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  color: #6b6b6b;
-  margin-top: -15px;
+  color: #e0e0e0;
+  text-align: center;
+  margin: 0;
 }
 
 .discografia-item-ft {
   font-family: 'Fraunces', Georgia, serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
-  color: #6b6b6b;
+  color: #e0e0e0;
+  text-align: center;
+  margin: 8px 0 0 0;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
 
   .discografia-item-content {
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
   }
 
   .discografia-section {
@@ -159,10 +190,15 @@
   }
 
   .discografia-item-title {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  .discografia-item-subtitle {
+    font-size: 14px;
   }
 
   .discografia-item-ft {
-    font-size: 15px;
+    font-size: 12px;
+    color: #e0e0e0;
   }
 }

@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
-import type { DiscoData } from '../../const/discos';
+import type { DiscoData, TrackData } from '../../const/discos';
 
-function renderAlbumInfo(album: DiscoData['album'], disco: DiscoData): ReactNode {
+function renderAlbumInfo(album: DiscoData['album'], disco: DiscoData | TrackData): ReactNode {
   return (
     <>  
     {album.map((item, i) => (
@@ -16,6 +16,6 @@ function renderAlbumInfo(album: DiscoData['album'], disco: DiscoData): ReactNode
   );
 }
 
-export function getDiscoInfo(disco: DiscoData): ReactNode {
-  return renderAlbumInfo(disco.album, disco as DiscoData & { partituraUrl?: string; letraUrl?: string });
+export function getDiscoInfo(disco: DiscoData | TrackData): ReactNode {
+  return renderAlbumInfo(disco.album, disco);
 }

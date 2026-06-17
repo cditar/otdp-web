@@ -55,7 +55,7 @@ export const HandwrittenLine = ({ width, isHovered }: HandwrittenLineProps) => {
         animate={{
           pathLength: isHovered ? 1 : 0,
           opacity: isHovered ? 1 : 0,
-          stroke: 'red',
+          stroke: 'rgb(30, 0, 255)',
         }}
         transition={{
           pathLength: { duration: 0.4, ease: "easeOut" },

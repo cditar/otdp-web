@@ -37,9 +37,8 @@ export const Discografia = () => {
               <img src={disco.image} alt={disco.title} className="discografia-cover" />
               <div className="discografia-item-content">
                 <h3 className="discografia-item-title">{disco.title}</h3>
-                <div className="discografia-item-subtitle">{disco.subtitle}</div>
-                <br />
-                <div className="discografia-item-subtitle">{disco.ft}</div>
+                <p className="discografia-item-subtitle">{disco.subtitle}</p>
+                {disco.ft && <p className="discografia-item-ft">{disco.ft}</p>}
               </div>
             </div>
           </article>

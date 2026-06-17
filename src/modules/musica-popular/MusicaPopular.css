@@ -1,0 +1,85 @@
+.musica-popular-container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #0A0A0A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.musica-popular-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: -0.05em;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.musica-popular-intro {
+    max-width: 900px;
+    padding: 0 40px;
+    color: white;
+    text-align: center;
+}
+
+.musica-popular-intro p {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #E0E0E0;
+    text-align: left;
+}
+
+.musica-popular-section {
+    scroll-margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.musica-popular-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    object-position: center;
+}
+
+.musica-popular-image-disk {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.musica-popular-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 40px;
+    color: white;
+}
+
+.musica-popular-content-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+    text-align: left;
+}
+
+.musica-popular-content p {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #E0E0E0;
+    text-align: left;
+}

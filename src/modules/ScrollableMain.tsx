@@ -4,6 +4,7 @@ import { News2 } from './news/News2';
 import { Discografia } from './discografia/Discografia';
 import { Videos } from './videos/Videos';
 import { HeaderBar } from '../components/HeaderBar/HeaderBar';
+import Footer from '../components/Footer/Footer';
 
 export const ScrollableMain = () => {
     const welcomeRef = useRef<HTMLDivElement | null>(null);
@@ -45,6 +46,7 @@ export const ScrollableMain = () => {
             <Discografia />
             {/* <Cycle /> */}
             <Videos />
+            <Footer />
         </div>
     );
 };

@@ -16,8 +16,13 @@ export const Section = ({ children, theme, title, titleColor, path, withArrowBac
     const navigate = useNavigate();
 
     const handleNavigateHome = () => {
-        sessionStorage.setItem('scrollPos-/', window.scrollY.toString());
-        navigate(path || '/');
+        if (path) {
+            sessionStorage.setItem('scrollPos-/', window.scrollY.toString());
+            navigate(path);
+        } else {
+            // Si no hay path definido, volver atrás en el historial
+            navigate(-1);
+        }
     };
 
     return (

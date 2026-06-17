@@ -4,10 +4,11 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { motion, AnimatePresence } from 'framer-motion';
 import menuImage1 from '../../assets/menu1.jpg';
 import menuImage2 from '../../assets/menu2.jpg';
-import menuImage3 from '../../assets/menu3.jpg';
+import menuImage11 from '../../assets/menu11.jpg';
 import menuImage4 from '../../assets/menu4.jpg';
 import menuImage5 from '../../assets/menu5.jpg';
 import menuImage6 from '../../assets/menu6.jpg';
+import menuImage3 from '../../assets/menu3.jpg';
 import { useState } from 'react';
 import { MenuItem } from './MenuItem';
 import './HeaderBar.css';
@@ -27,7 +28,7 @@ const MENU_ITEMS = [
   },
   {
     label: 'Novedades',
-    image: menuImage2,
+    image: menuImage5,
     link: '/novedades',
   },
   
@@ -43,7 +44,7 @@ const MENU_ITEMS = [
   },
   {
     label: 'Bio',
-    image: menuImage5,
+    image: menuImage11,
     link: '/bio',
   },
   {
@@ -73,7 +74,7 @@ export const HeaderBar = () => {
           <FontAwesomeIcon icon={faBars} />
         </button>
 
-        <div className="header-title">Orquesta Típica Di Pasquale</div>
+        <div className="header-title" onClick={() => navigate('/')}>Orquesta Típica Di Pasquale</div>
 
         <div className="header-socials">
         <a

@@ -1,13 +1,27 @@
-import React from 'react';
+import { useRef, useState } from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
+import { motion, useInView } from 'framer-motion';
 import './Videos.css';
 
-const VideoCard = ({ id }: { id: string }) => {
-    const [playing, setPlaying] = React.useState(false);
+const VideoCard = ({ id, index }: { id: string; index: number }) => {
+    const [playing, setPlaying] = useState(false);
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, amount: 0.3 });
 
     return (
-        <div className="video-card" onClick={() => setPlaying(true)}>
+        <motion.div 
+            ref={ref}
+            className="video-card" 
+            onClick={() => setPlaying(true)}
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+            transition={{ 
+                duration: 0.6, 
+                ease: "easeOut",
+                delay: isInView ? index * 0.1 : 0
+            }}
+        >
             {!playing && (
                 <>
                     <img
@@ -28,7 +42,7 @@ const VideoCard = ({ id }: { id: string }) => {
                     allowFullScreen
                 />
             )}
-        </div>
+        </motion.div>
     );
 };
 
@@ -66,7 +80,7 @@ export const Videos = () => {
                                     paddingTop: '56.25%', // 👈 esto lo mantenemos
                                 }}
                             >
-                                <VideoCard id={id} />
+                                <VideoCard id={id} index={index} />
                             </Box>
                         </Grid>
                     ))}

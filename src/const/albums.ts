@@ -362,3 +362,196 @@ export const Regreso = [
     { label: "Grabado en", value: "estudio “Enrique Santos Discépolo”" },
     { label: "Diseño gráfico", value: "“Fuji”" }
   ];
+// Tracks del álbum "¿Qué pasa con la música popular hoy?"
+export const laEspera = [
+    { label: "Productor", value: "Juan Ignacio Di Pasquale" },
+    { label: "Piano, dirección y arreglos", value: "Juan Ignacio Di Pasquale" },
+    { label: "Violines", value: "Octavio Bianchi Godoy, Ariadna Bruschini, Laura Campos, Noelia Saldaña" },
+    { label: "Viola", value: "Dayana Parra" },
+    { label: "Violonchelo", value: "Regina Manfredi" },
+    { label: "Bandoneones", value: "Joaquín Sterman, Tomás Muir, Tito Pellecchia, Rodrigo Almonacid" },
+    { label: "Contrabajo", value: "Diego Vázquez" },
+    { label: "Autores y compositores", value: "Por definir" },
+    { label: "Grabación", value: "Rodrigo Ruiz, Alejandro Marani, Agustina Curci, Santiago García Ferro" },
+    { label: "Mezcla", value: "Ariel Lavigna" },
+    { label: "Mastering", value: "Ariel Lavigna" },
+    { label: "Grabado en", value: "estudio 'Enrique Santos Discépolo'" },
+    { label: "Diseño gráfico", value: "'Fuji'" }
+];
+
+export const electricidad = [
+    { label: "Productor", value: "Juan Ignacio Di Pasquale" },
+    { label: "Piano, dirección y arreglos", value: "Juan Ignacio Di Pasquale" },
+    { label: "Violines", value: "Octavio Bianchi Godoy, Ariadna Bruschini, Laura Campos, Noelia Saldaña" },
+    { label: "Viola", value: "Dayana Parra" },
+    { label: "Violonchelo", value: "Regina Manfredi" },
+    { label: "Bandoneones", value: "Joaquín Sterman, Tomás Muir, Tito Pellecchia, Rodrigo Almonacid" },
+    { label: "Contrabajo", value: "Diego Vázquez" },
+    { label: "Autores y compositores", value: "Por definir" },
+    { label: "Grabación", value: "Rodrigo Ruiz, Alejandro Marani, Agustina Curci, Santiago García Ferro" },
+    { label: "Mezcla", value: "Ariel Lavigna" },
+    { label: "Mastering", value: "Ariel Lavigna" },
+    { label: "Grabado en", value: "estudio 'Enrique Santos Discépolo'" },
+    { label: "Diseño gráfico", value: "'Fuji'" }
+];
+
+export const sanCamilo = [
+    { label: "Productor", value: "Juan Ignacio Di Pasquale" },
+    { label: "Piano, dirección y arreglos", value: "Juan Ignacio Di Pasquale" },
+    { label: "Violines", value: "Octavio Bianchi Godoy, Ariadna Bruschini, Laura Campos, Noelia Saldaña" },
+    { label: "Viola", value: "Dayana Parra" },
+    { label: "Violonchelo", value: "Regina Manfredi" },
+    { label: "Bandoneones", value: "Joaquín Sterman, Tomás Muir, Tito Pellecchia, Rodrigo Almonacid" },
+    { label: "Contrabajo", value: "Diego Vázquez" },
+    { label: "Autores y compositores", value: "Por definir" },
+    { label: "Grabación", value: "Rodrigo Ruiz, Alejandro Marani, Agustina Curci, Santiago García Ferro" },
+    { label: "Mezcla", value: "Ariel Lavigna" },
+    { label: "Mastering", value: "Ariel Lavigna" },
+    { label: "Grabado en", value: "estudio 'Enrique Santos Discépolo'" },
+    { label: "Diseño gráfico", value: "'Fuji'" }
+];
+
+export const castigo = [
+    { label: "Productor", value: "Juan Ignacio Di Pasquale" },
+    { label: "Piano, dirección y arreglos", value: "Juan Ignacio Di Pasquale" },
+    { label: "Violines", value: "Octavio Bianchi Godoy, Ariadna Bruschini, Laura Campos, Noelia Saldaña" },
+    { label: "Viola", value: "Dayana Parra" },
+    { label: "Violonchelo", value: "Regina Manfredi" },
+    { label: "Bandoneones", value: "Joaquín Sterman, Tomás Muir, Tito Pellecchia, Rodrigo Almonacid" },
+    { label: "Contrabajo", value: "Diego Vázquez" },
+    { label: "Autores y compositores", value: "Por definir" },
+    { label: "Grabación", value: "Rodrigo Ruiz, Alejandro Marani, Agustina Curci, Santiago García Ferro" },
+    { label: "Mezcla", value: "Ariel Lavigna" },
+    { label: "Mastering", value: "Ariel Lavigna" },
+    { label: "Grabado en", value: "estudio 'Enrique Santos Discépolo'" },
+    { label: "Diseño gráfico", value: "'Fuji'" }
+];
+
+export const donaCarmen = [
+    { label: "Productor", value: "Juan Ignacio Di Pasquale" },
+    { label: "Piano, dirección y arreglos", value: "Juan Ignacio Di Pasquale" },
+    { label: "Violines", value: "Octavio Bianchi Godoy, Ariadna Bruschini, Laura Campos, Noelia Saldaña" },
+    { label: "Viola", value: "Dayana Parra" },
+    { label: "Violonchelo", value: "Regina Manfredi" },
+    { label: "Bandoneones", value: "Joaquín Sterman, Tomás Muir, Tito Pellecchia, Rodrigo Almonacid" },
+    { label: "Contrabajo", value: "Diego Vázquez" },
+    { label: "Autores y compositores", value: "Por definir" },
+    { label: "Grabación", value: "Rodrigo Ruiz, Alejandro Marani, Agustina Curci, Santiago García Ferro" },
+    { label: "Mezcla", value: "Ariel Lavigna" },
+    { label: "Mastering", value: "Ariel Lavigna" },
+    { label: "Grabado en", value: "estudio 'Enrique Santos Discépolo'" },
+    { label: "Diseño gráfico", value: "'Fuji'" }
+];
+
+export const polacos = [
+    { label: "Productor", value: "Juan Ignacio Di Pasquale" },
+    { label: "Piano, dirección y arreglos", value: "Juan Ignacio Di Pasquale" },
+    { label: "Violines", value: "Octavio Bianchi Godoy, Ariadna Bruschini, Laura Campos, Noelia Saldaña" },
+    { label: "Viola", value: "Dayana Parra" },
+    { label: "Violonchelo", value: "Regina Manfredi" },
+    { label: "Bandoneones", value: "Joaquín Sterman, Tomás Muir, Tito Pellecchia, Rodrigo Almonacid" },
+    { label: "Contrabajo", value: "Diego Vázquez" },
+    { label: "Autores y compositores", value: "Por definir" },
+    { label: "Grabación", value: "Rodrigo Ruiz, Alejandro Marani, Agustina Curci, Santiago García Ferro" },
+    { label: "Mezcla", value: "Ariel Lavigna" },
+    { label: "Mastering", value: "Ariel Lavigna" },
+    { label: "Grabado en", value: "estudio 'Enrique Santos Discépolo'" },
+    { label: "Diseño gráfico", value: "'Fuji'" }
+];
+
+// Tracks del álbum "Continuidades"
+export const fanfarriaDelOlvido = [
+    { label: "Productor", value: "Juan Ignacio Di Pasquale" },
+    { label: "Piano, dirección y arreglos", value: "Juan Ignacio Di Pasquale" },
+    { label: "Voz invitada/feat", value: "Victoria Di Raimondo" },
+    { label: "Violines", value: "Octavio Bianchi Godoy, Ariadna Bruschini, Laura Campos, Noelia Saldaña" },
+    { label: "Viola", value: "Dayana Parra" },
+    { label: "Violonchelo", value: "Regina Manfredi" },
+    { label: "Bandoneones", value: "Joaquín Sterman, Tomás Muir, Tito Pellecchia, Rodrigo Almonacid" },
+    { label: "Contrabajo", value: "Diego Vázquez" },
+    { label: "Autores y compositores", value: "Por definir" },
+    { label: "Grabación", value: "Norberto Villagra" },
+    { label: "Mezcla y Mastering", value: "Jorge 'Portugués' Da Silva y Norberto Villagra" },
+    { label: "Grabado en", value: "Estudios Fort" },
+    { label: "Diseño gráfico", value: "Juan Fuji" }
+];
+
+export const cancionSinNombre = [
+    { label: "Productor", value: "Juan Ignacio Di Pasquale" },
+    { label: "Piano, dirección y arreglos", value: "Juan Ignacio Di Pasquale" },
+    { label: "Voz invitada/feat", value: "Victoria Di Raimondo" },
+    { label: "Violines", value: "Octavio Bianchi Godoy, Ariadna Bruschini, Laura Campos, Noelia Saldaña" },
+    { label: "Viola", value: "Dayana Parra" },
+    { label: "Violonchelo", value: "Regina Manfredi" },
+    { label: "Bandoneones", value: "Joaquín Sterman, Tomás Muir, Tito Pellecchia, Rodrigo Almonacid" },
+    { label: "Contrabajo", value: "Diego Vázquez" },
+    { label: "Autores y compositores", value: "Por definir" },
+    { label: "Grabación", value: "Norberto Villagra" },
+    { label: "Mezcla y Mastering", value: "Jorge 'Portugués' Da Silva y Norberto Villagra" },
+    { label: "Grabado en", value: "Estudios Fort" },
+    { label: "Diseño gráfico", value: "Juan Fuji" }
+];
+
+export const elPlanDeDios = [
+    { label: "Productor", value: "Juan Ignacio Di Pasquale" },
+    { label: "Piano, dirección y arreglos", value: "Juan Ignacio Di Pasquale" },
+    { label: "Voz invitada/feat", value: "Victoria Di Raimondo" },
+    { label: "Violines", value: "Octavio Bianchi Godoy, Ariadna Bruschini, Laura Campos, Noelia Saldaña" },
+    { label: "Viola", value: "Dayana Parra" },
+    { label: "Violonchelo", value: "Regina Manfredi" },
+    { label: "Bandoneones", value: "Joaquín Sterman, Tomás Muir, Tito Pellecchia, Rodrigo Almonacid" },
+    { label: "Contrabajo", value: "Diego Vázquez" },
+    { label: "Autores y compositores", value: "Por definir" },
+    { label: "Grabación", value: "Norberto Villagra" },
+    { label: "Mezcla y Mastering", value: "Jorge 'Portugués' Da Silva y Norberto Villagra" },
+    { label: "Grabado en", value: "Estudios Fort" },
+    { label: "Diseño gráfico", value: "Juan Fuji" }
+];
+
+export const marAdentro = [
+    { label: "Productor", value: "Juan Ignacio Di Pasquale" },
+    { label: "Piano, dirección y arreglos", value: "Juan Ignacio Di Pasquale" },
+    { label: "Voz invitada/feat", value: "Victoria Di Raimondo" },
+    { label: "Violines", value: "Octavio Bianchi Godoy, Ariadna Bruschini, Laura Campos, Noelia Saldaña" },
+    { label: "Viola", value: "Dayana Parra" },
+    { label: "Violonchelo", value: "Regina Manfredi" },
+    { label: "Bandoneones", value: "Joaquín Sterman, Tomás Muir, Tito Pellecchia, Rodrigo Almonacid" },
+    { label: "Contrabajo", value: "Diego Vázquez" },
+    { label: "Autores y compositores", value: "Por definir" },
+    { label: "Grabación", value: "Norberto Villagra" },
+    { label: "Mezcla y Mastering", value: "Jorge 'Portugués' Da Silva y Norberto Villagra" },
+    { label: "Grabado en", value: "Estudios Fort" },
+    { label: "Diseño gráfico", value: "Juan Fuji" }
+];
+
+export const valsDelLaberinto = [
+    { label: "Productor", value: "Juan Ignacio Di Pasquale" },
+    { label: "Piano, dirección y arreglos", value: "Juan Ignacio Di Pasquale" },
+    { label: "Voz invitada/feat", value: "Victoria Di Raimondo" },
+    { label: "Violines", value: "Octavio Bianchi Godoy, Ariadna Bruschini, Laura Campos, Noelia Saldaña" },
+    { label: "Viola", value: "Dayana Parra" },
+    { label: "Violonchelo", value: "Regina Manfredi" },
+    { label: "Bandoneones", value: "Joaquín Sterman, Tomás Muir, Tito Pellecchia, Rodrigo Almonacid" },
+    { label: "Contrabajo", value: "Diego Vázquez" },
+    { label: "Autores y compositores", value: "Por definir" },
+    { label: "Grabación", value: "Norberto Villagra" },
+    { label: "Mezcla y Mastering", value: "Jorge 'Portugués' Da Silva y Norberto Villagra" },
+    { label: "Grabado en", value: "Estudios Fort" },
+    { label: "Diseño gráfico", value: "Juan Fuji" }
+];
+
+export const balvanera = [
+    { label: "Productor", value: "Juan Ignacio Di Pasquale" },
+    { label: "Piano, dirección y arreglos", value: "Juan Ignacio Di Pasquale" },
+    { label: "Voz invitada/feat", value: "Victoria Di Raimondo" },
+    { label: "Violines", value: "Octavio Bianchi Godoy, Ariadna Bruschini, Laura Campos, Noelia Saldaña" },
+    { label: "Viola", value: "Dayana Parra" },
+    { label: "Violonchelo", value: "Regina Manfredi" },
+    { label: "Bandoneones", value: "Joaquín Sterman, Tomás Muir, Tito Pellecchia, Rodrigo Almonacid" },
+    { label: "Contrabajo", value: "Diego Vázquez" },
+    { label: "Autores y compositores", value: "Por definir" },
+    { label: "Grabación", value: "Norberto Villagra" },
+    { label: "Mezcla y Mastering", value: "Jorge 'Portugués' Da Silva y Norberto Villagra" },
+    { label: "Grabado en", value: "Estudios Fort" },
+    { label: "Diseño gráfico", value: "Juan Fuji" }
+];
