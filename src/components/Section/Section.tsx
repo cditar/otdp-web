@@ -16,9 +16,10 @@ interface SectionProps {
     withFooter?: boolean;
     titleCentered?: boolean;
     isContainer?: boolean;
+    mobileTitleFontSize?: string;
 }
 
-export const Section = ({ children, title, titleColor, backgroundColor = '#0A0A0A', path, withArrowBack, withHeaderBar, withFooter, titleCentered, isContainer = false }: SectionProps) => {
+export const Section = ({ children, title, titleColor, backgroundColor = '#0A0A0A', path, withArrowBack, withHeaderBar, withFooter, titleCentered, isContainer = false, mobileTitleFontSize }: SectionProps) => {
     const navigate = useNavigate();
 
     const handleNavigateHome = () => {
@@ -30,7 +31,13 @@ export const Section = ({ children, title, titleColor, backgroundColor = '#0A0A0
     };
 
     return (
-        <div className={`section-container ${withHeaderBar ? 'section-container--with-header' : ''} ${isContainer ? 'section-container--content-height' : ''}`} style={{ backgroundColor: backgroundColor }}>
+        <div 
+            className={`section-container ${withHeaderBar ? 'section-container--with-header' : ''} ${isContainer ? 'section-container--content-height' : ''}`} 
+            style={{ 
+                backgroundColor: backgroundColor,
+                '--mobile-title-font-size': mobileTitleFontSize || '32px'
+            } as React.CSSProperties}
+        >
             {withHeaderBar && <HeaderBar/>}
             <div className={`section-arrow-title-container ${titleCentered ? 'section-arrow-title-container--centered' : ''}`}>
                 {

@@ -60,7 +60,7 @@ export const ScrollableMain = () => {
             </div>
             <News2 />
             <Discografia />
-            <Section title='Videos' path='/videos' backgroundColor='#e0e0de' isContainer>
+            <Section title='Videos' path='/videos' backgroundColor='#e0e0de' isContainer mobileTitleFontSize='40px'>
                 <Box sx={{ width: '100%', maxWidth: '100%' }}>
                     <Grid container spacing={2}>
                         {videoIdsScrollableMain.map((id: string, index: number) => (

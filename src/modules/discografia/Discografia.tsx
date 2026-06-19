@@ -8,7 +8,7 @@ export const Discografia = () => {
 
   return (
     <>
-      <Section title='Discografía' path='/discografia' backgroundColor='#e0e0de' isContainer>
+      <Section title='Discografía' path='/discografia' backgroundColor='#e0e0de' isContainer mobileTitleFontSize='40px'>
         <div className="discografia-list">
           {DISCOS.map((disco, i) => (
             <article
@@ -28,7 +28,7 @@ export const Discografia = () => {
         </div>
       </Section>
 
-      <Section title='Singles' path='/singles' backgroundColor='#e0e0de' isContainer>
+      <Section title='Singles' path='/singles' backgroundColor='#e0e0de' isContainer mobileTitleFontSize='40px'>
         <div className="discografia-list">
           {Singles.map((disco, i) => (
             <article

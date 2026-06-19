@@ -6,7 +6,7 @@ import './Press.css';
 export const Press = () => {
     return (
         <>
-            <Section title='Prensa' path='/prensa' withHeaderBar withFooter>
+            <Section title='Prensa' path='/prensa' withHeaderBar withFooter mobileTitleFontSize='40px'>
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
