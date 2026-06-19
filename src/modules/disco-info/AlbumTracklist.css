@@ -1,13 +1,9 @@
 /* Página de tracklist del álbum */
 .album-tracklist-page {
   width: 100%;
-  min-height: 100vh;
-  height: 100vh;
-  padding: 80px 56px 56px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  background: radial-gradient(circle at top, #252525 0%, #000 60%) !important;
 }
 
 .album-tracklist-title {
@@ -16,7 +12,7 @@
   font-weight: 700;
   color: var(--disco-accent-color, #ce3957);
   text-align: left;
-  margin: -72px 0px 0px 40px;
+  margin: 0px 0px 0px 40px;
   flex-shrink: 0;
 }
 
@@ -223,15 +219,13 @@
 
 @media (max-width: 768px) {
   .album-tracklist-page {
-    background: radial-gradient(circle at top, #111 0%, #000 60%);
-    padding: 15px 20px;
     height: auto;
     min-height: 100vh;
   }
 
   .album-tracklist-title {
-    font-size: 26px;
-    margin: 0 0 20px 0;
+    font-size: 23px;
+    margin: 50px 0px 0px 5px;
     text-align: center;
   }
 
@@ -258,7 +252,7 @@
     text-align: left;
     width: 100%;
     padding: 0;
-    margin-top: 0;
+    margin-top: 160px;
   }
 
   .album-tracklist-subtitle {

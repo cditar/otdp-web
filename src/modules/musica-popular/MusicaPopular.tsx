@@ -12,8 +12,8 @@ export const MusicaPopular = () => {
     const navigate = useNavigate();
     return (
         <>
+            <Section title='¿QUÉ PASA CON LA MÚSICA POPULAR HOY?' titleColor='#ce3957' path='/que-pasa-con-la-musica-popular-hoy'>
             <HeaderBar />
-            <Section theme='dark' path='/que-pasa-con-la-musica-popular-hoy'>
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -59,7 +59,6 @@ export const MusicaPopular = () => {
                     </div>
                 </motion.div>
             </Section>
-            <Footer />
         </>
     )
 }

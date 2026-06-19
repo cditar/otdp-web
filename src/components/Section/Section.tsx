@@ -2,17 +2,19 @@ import { ReactNode } from 'react';
 import './Section.css';
 import { ArrowDownwardRounded } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
+import { HeaderBar } from '../HeaderBar/HeaderBar';
+import Footer from '../Footer/Footer';
 
 interface SectionProps {
     children: ReactNode;
-    theme: 'dark' | 'light';
     title?: string;
     titleColor?: string;
     path?: string;
     withArrowBack?: boolean;
+    withHeaderBar?: boolean;
 }
 
-export const Section = ({ children, theme, title, titleColor, path, withArrowBack }: SectionProps) => {
+export const Section = ({ children, title, titleColor, path, withArrowBack, withHeaderBar }: SectionProps) => {
     const navigate = useNavigate();
 
     const handleNavigateHome = () => {
@@ -26,21 +28,24 @@ export const Section = ({ children, theme, title, titleColor, path, withArrowBac
     };
 
     return (
-        <div className={theme === 'dark' ? "section-container-dark" : "section-container-light"}>
-            {
-                withArrowBack &&
-                <button
-                    className="section-arrow-back"
-                    onClick={handleNavigateHome}
-                    style={titleColor ? { background: titleColor, borderColor: titleColor } : undefined}
-                >
+        <div className={`section-container ${withHeaderBar ? 'section-container--with-header' : ''}`}>
+            {withHeaderBar && <HeaderBar/>}
+            <div className="section-arrow-title-container">
+                {
+                    withArrowBack &&
+                    <button
+                        className="section-arrow-back"
+                        onClick={handleNavigateHome}
+                    >
                         <ArrowDownwardRounded />
                     </button>
                 }
-            {!!title && <div className='section-title' style={{ color: titleColor }}> {title} </div>}
+                {!!title && <div className='section-title' style={{ color: titleColor }}> {title} </div>}
+            </div>
             <div className="section-content">
                 {children}
             </div>
+            <Footer />
         </div>
     );
 };

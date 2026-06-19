@@ -5,6 +5,8 @@ import { AlbumTracklist } from './AlbumTracklist';
 import { getDiscoBySlug } from '../../const/discos';
 import { getDiscoInfo } from './discoInfoContent';
 import type { DiscoData } from '../../const/discos';
+import Footer from '../../components/Footer/Footer';
+import { HeaderBar } from '../../components/HeaderBar/HeaderBar';
 
 export const DiscoInfoPage = () => {
   const { slug } = useParams<{ slug: string }>();

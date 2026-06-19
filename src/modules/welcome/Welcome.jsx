@@ -1,12 +1,10 @@
 import './Welcome.css';
-import HoverVideoPlayer from 'react-hover-video-player';
 import { motion, useIsPresent } from 'framer-motion';
-import { Section } from '../../components';
 import welcomeVideo from '../../assets/welcomeVideo.mp4'
 import { useIsDesktop } from '../../hooks/useIsDesktop';
-import { BlurIn } from '../../assets/animations/BlurIn';
 import { HoverLetters } from '../../assets/animations/HoverLetters';
-
+import HoverVideoPlayer from 'react-hover-video-player';
+import { BlurIn } from '../../assets/animations/BlurIn';
 
 export const Welcome = () => {
     const isPresent = useIsPresent();
@@ -14,7 +12,7 @@ export const Welcome = () => {
 
 
     return (
-        <Section theme='dark'>
+        <>
             {isDesktop ? (
                 <HoverVideoPlayer
                     videoSrc={welcomeVideo}
@@ -48,6 +46,6 @@ export const Welcome = () => {
                 style={{ originX: isPresent ? 0 : 1 }}
                 className="welcome-screen"
             />
-        </Section>
+        </>
     );
 };

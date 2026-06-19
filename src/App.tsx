@@ -3,20 +3,14 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { ScrollableMain } from "./modules/ScrollableMain";
 import { AnimatePresence } from 'framer-motion';
 import { useScrollPosition } from './hooks/useScrollPosition';
-import { Continuidades } from './modules/music/Continuidades';
-import { Campaign } from './modules/campaign/Campaign';
-import { ElFilo } from './modules/music/ElFilo';
-import { Candombe } from './modules/music/Candombe';
-import { Mananita } from './modules/music/Mananita';
 import { useEffect } from 'react';
-import { CampaignAr } from './modules/campaign/CampaignAR';
-import { CampaignWorld } from './modules/campaign/CampaignWorld';
 import { DiscoInfoPage } from './modules/disco-info/DiscoInfoPage';
 import { motion, useScroll } from 'framer-motion';
 import { Novedades } from './modules/novedades/Novedades';
 import { Bio } from './modules/bio/Bio';
 import { Press } from './modules/press/Press';
 import { MusicaPopular } from './modules/musica-popular/MusicaPopular';
+import { Videos } from './modules/videos/Videos';
 
 function App() {
   const location = useLocation();
@@ -41,16 +35,10 @@ function App() {
     <Routes location={location} key={location.pathname}>
       <Route path="/" element={<ScrollableMain />} />
       <Route path="/novedades" element={<Novedades />} />
-      <Route path='/campaign' element={<Campaign />} />
-      <Route path='/campaign/ar' element={<CampaignAr />} />
-      <Route path='/campaign/world' element={<CampaignWorld />} />
-      <Route path="/el-filo" element={<ElFilo />} />
-      <Route path="/candombe" element={<Candombe />} />
-      <Route path="/mananita" element={<Mananita />} />
-      <Route path="/continuidades" element={<Continuidades />} />
       <Route path="/disco/:slug" element={<DiscoInfoPage />} />
       <Route path="/bio" element={<Bio />} />
       <Route path="/prensa" element={<Press />} />
+      <Route path="/videos" element={<Videos />} />
       <Route path="/que-pasa-con-la-musica-popular-hoy" element={<MusicaPopular />} />
     </Routes>
   )

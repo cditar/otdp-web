@@ -7,7 +7,6 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  background: radial-gradient(circle at top, #252525 0%, #000 60%) !important;
 }
 
 .disco-info-title {
@@ -16,7 +15,7 @@
   font-weight: 700;
   color: var(--disco-accent-color, #ce3957);
   text-align: left;
-  margin: -72px 0px 0px 40px;
+  margin: 0px 0px 0px 40px;
   flex-shrink: 0;
 }
 

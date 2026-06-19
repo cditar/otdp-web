@@ -14,7 +14,7 @@ export const News2 = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: 'easeInOut' }}
     >
-    <section className="novedades-section">
+    <div className="novedades-section">
         <div className='novedades-hero'>
                     <img 
                         src={MusicaPopularImg} 
@@ -34,7 +34,7 @@ export const News2 = () => {
                         </div>
                     </div>
                 </div>
-    </section>
+    </div>
     </motion.div>
   );
 };

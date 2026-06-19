@@ -1,22 +1,18 @@
 import { Section } from "../../components";
-import { HeaderBar } from "../../components/HeaderBar/HeaderBar";
 import { PressData } from "../../const/press";
 import { motion } from 'framer-motion';
 import './Press.css';
-import Footer from "../../components/Footer/Footer";
 
 export const Press = () => {
     return (
         <>
-            <Section theme='dark' path='/prensa'>
-                <HeaderBar />
+            <Section title='Prensa' path='/prensa' withHeaderBar>
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, ease: 'easeInOut' }}
                 >
                     <div className='press-container'>
-                        <h1 className='press-title'>Prensa</h1>
                         <div className='press-grid'>
                             {PressData.map((item: any, index: number) => (
                                 <a key={index} href={item.link} target="_blank" rel="noopener noreferrer" className='press-card'>
@@ -34,7 +30,6 @@ export const Press = () => {
                     </div>
                 </motion.div>
             </Section>
-            <Footer />
         </>
     )
 }

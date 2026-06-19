@@ -4,7 +4,6 @@
     background-color: #0A0A0A;
     display: flex;
     flex-direction: column;
-    padding: 32px 40px 40px;
     box-sizing: border-box;
 }
 
@@ -17,6 +16,8 @@
     margin: 0 0 38px 0;
     padding: 0;
     letter-spacing: -0.05em;
+    margin-top: 60px;
+    margin-left: 40px;
 }
 
 .video-card {

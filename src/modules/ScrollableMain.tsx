@@ -2,9 +2,12 @@ import { useRef, useEffect, useState } from 'react';
 import { Welcome } from './welcome/Welcome';
 import { News2 } from './news/News2';
 import { Discografia } from './discografia/Discografia';
-import { Videos } from './videos/Videos';
 import { HeaderBar } from '../components/HeaderBar/HeaderBar';
 import Footer from '../components/Footer/Footer';
+import { Box, Grid, Button } from '@mui/material';
+import { VideoCard } from '../components';
+import { videoIds, videoIdsScrollableMain } from '../const/videos';
+import { Link } from 'react-router-dom';
 
 export const ScrollableMain = () => {
     const welcomeRef = useRef<HTMLDivElement | null>(null);
@@ -17,7 +20,7 @@ export const ScrollableMain = () => {
             },
             {
                 root: null,
-                threshold: 0.2, 
+                threshold: 0.2,
             }
         );
 
@@ -45,7 +48,58 @@ export const ScrollableMain = () => {
             <News2 />
             <Discografia />
             {/* <Cycle /> */}
-            <Videos />
+            <div className="videos-section">
+                <h2 className="videos-sidebar-title">Videos</h2>
+                <Box
+                    sx={{ flexGrow: 1, padding: 2 }}
+                    style={{
+                        marginBottom: '20px',
+                        display: 'flex',
+                        justifyContent: 'center',
+                    }}
+                >
+                    <Grid container spacing={2} style={{ width: '95%' }}>
+                        {videoIdsScrollableMain.map((id: string, index: number) => (
+                            <Grid item xs={12} sm={4} key={index}>
+                                <Box
+                                    sx={{
+                                        position: 'relative',
+                                        paddingTop: '56.25%', // 👈 esto lo mantenemos
+                                    }}
+                                >
+                                    <VideoCard id={id as string} index={index} />
+                                </Box>
+                            </Grid>
+                        ))}
+                    </Grid>
+                </Box>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        marginBottom: '40px',
+                    }}
+                >
+                    <Button
+                        component={Link}
+                        to="/videos"
+                        variant="outlined"
+                        sx={{
+                            padding: '10px 30px',
+                            fontSize: '16px',
+                            textTransform: 'none',
+                            borderColor: 'var(--hue-1)',
+                            color: 'var(--hue-1)',
+                            '&:hover': {
+                                borderColor: 'var(--hue-1)',
+                                backgroundColor: 'rgba(var(--hue-1-rgb), 0.1)',
+                            },
+                        }}
+                    >
+                        Ver más
+                    </Button>
+                </Box>
+            </div>
             <Footer />
         </div>
     );

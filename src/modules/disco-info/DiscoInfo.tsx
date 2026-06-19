@@ -28,9 +28,8 @@ export const DiscoInfo = ({
   spotifyUrl,
 }: DiscoInfoProps) => {
   return (
-    <Section theme="dark" withArrowBack titleColor={color}>
+    <Section title={title.toUpperCase()} withArrowBack titleColor={color}>
       <div className="disco-info-page" style={{ '--disco-accent-color': color } as React.CSSProperties}>
-        <h1 className="disco-info-title">{title.toUpperCase()}</h1>
         <div className="disco-info-content">
           <div className="disco-info-disc-wrap">
             <div className="disco-info-disc">

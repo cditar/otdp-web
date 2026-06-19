@@ -6,7 +6,7 @@ export const Discografia = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="discografia-section">
+    <div className="discografia-section">
       <h2 className="discografia-sidebar-title">Discografía</h2>
       <div className="discografia-list">
         {DISCOS.map((disco, i) => (
@@ -44,6 +44,6 @@ export const Discografia = () => {
           </article>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
