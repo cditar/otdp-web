@@ -24,7 +24,6 @@
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
-  gap: 0;
   width: 100%;
   max-width: 1600px;
   margin: 30px 0px 0px 0px;
@@ -208,9 +207,6 @@
 
 /* Responsive */
 @media (max-width: 1200px) {
-  .album-tracklist-content {
-    gap: 32px;
-  }
 
   .album-tracklist-info {
     padding-left: 32px;

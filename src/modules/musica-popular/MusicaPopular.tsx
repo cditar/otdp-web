@@ -1,9 +1,7 @@
 import { Section } from "../../components"
 import { motion } from 'framer-motion';
-import { HeaderBar } from "../../components/HeaderBar/HeaderBar";
 import MusicaPopularOriginal from '../../assets/ciclo/Nota Que pasa con la musica popular hoy.jpg';
 import './MusicaPopular.css';
-import Footer from "../../components/Footer/Footer";
 import { Timeline } from './Timeline';
 import MusicaPopularImg from '../../assets/discos/MusicaPopularOriginal.png';
 import { useNavigate } from "react-router-dom";
@@ -12,7 +10,7 @@ export const MusicaPopular = () => {
     const navigate = useNavigate();
     return (
         <>
-            <Section titleCentered title='¿Qué pasa con la música popular hoy?' titleColor='#ce3957' path='/que-pasa-con-la-musica-popular-hoy' withHeaderBar>
+            <Section titleCentered title='¿Qué pasa con la música popular hoy?' titleColor='#ce3957' path='/que-pasa-con-la-musica-popular-hoy' withHeaderBar withFooter>
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

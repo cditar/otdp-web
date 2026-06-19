@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 100vw;
     height: 45px;
     background: #0A0A0A;
     z-index: 999999;
@@ -13,7 +14,6 @@
     padding: 0 16px;
     box-sizing: border-box;
     border-bottom: 1px solid rgba(0,0,0,0.08);
-    /* ✨ transición suave */
     animation: fadeDown 400ms ease-out;
 }
 

@@ -28,11 +28,10 @@ export const DiscoInfo = ({
   spotifyUrl,
 }: DiscoInfoProps) => {
   return (
-    <Section title={title.toUpperCase()} withArrowBack titleColor={color}>
-      <div className="disco-info-page" style={{ '--disco-accent-color': color } as React.CSSProperties}>
+    <Section title={title} withArrowBack titleColor={color} withFooter>
         <div className="disco-info-content">
           <div className="disco-info-disc-wrap">
-            <div className="disco-info-disc">
+            <div className='disco-info-disc'>
               <div className="disco-info-disc-inner">
                 <img src={original} alt={title} className="disco-info-disc-img" />
               </div>
@@ -84,7 +83,6 @@ export const DiscoInfo = ({
           </div>
           <div className="disco-info-info">{info}</div>
         </div>
-      </div>
     </Section>
   );
 };

@@ -9,13 +9,16 @@ interface SectionProps {
     children: ReactNode;
     title?: string;
     titleColor?: string;
+    backgroundColor?: string;
     path?: string;
     withArrowBack?: boolean;
     withHeaderBar?: boolean;
+    withFooter?: boolean;
     titleCentered?: boolean;
+    isContainer?: boolean;
 }
 
-export const Section = ({ children, title, titleColor, path, withArrowBack, withHeaderBar, titleCentered }: SectionProps) => {
+export const Section = ({ children, title, titleColor, backgroundColor = '#0A0A0A', path, withArrowBack, withHeaderBar, withFooter, titleCentered, isContainer = false }: SectionProps) => {
     const navigate = useNavigate();
 
     const handleNavigateHome = () => {
@@ -27,7 +30,7 @@ export const Section = ({ children, title, titleColor, path, withArrowBack, with
     };
 
     return (
-        <div className={`section-container ${withHeaderBar ? 'section-container--with-header' : ''}`}>
+        <div className={`section-container ${withHeaderBar ? 'section-container--with-header' : ''} ${isContainer ? 'section-container--content-height' : ''}`} style={{ backgroundColor: backgroundColor }}>
             {withHeaderBar && <HeaderBar/>}
             <div className={`section-arrow-title-container ${titleCentered ? 'section-arrow-title-container--centered' : ''}`}>
                 {
@@ -44,7 +47,7 @@ export const Section = ({ children, title, titleColor, path, withArrowBack, with
             <div className="section-content">
                 {children}
             </div>
-            <Footer />
+            {withFooter && <Footer />}
         </div>
     );
 };

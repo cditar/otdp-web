@@ -4,7 +4,6 @@ import { faYoutube, faSpotify } from '@fortawesome/free-brands-svg-icons';
 import { Section } from '../../components';
 import type { DiscoData } from '../../const/discos';
 import './AlbumTracklist.css';
-import { HeaderBar } from '../../components/HeaderBar/HeaderBar';
 
 export interface AlbumTracklistProps {
   title: string;
@@ -28,7 +27,7 @@ export const AlbumTracklist = ({
   const navigate = useNavigate();
 
   return (
-    <Section title={title.toUpperCase()} withArrowBack titleColor={color}>
+    <Section title={title} withArrowBack titleColor={color} withFooter>
       <div className="album-tracklist-page" style={{ '--disco-accent-color': color } as React.CSSProperties}>
         {/* <h1 className="album-tracklist-title">{title.toUpperCase()}</h1> */}
         <div className="album-tracklist-content">

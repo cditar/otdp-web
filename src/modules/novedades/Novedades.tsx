@@ -9,7 +9,7 @@ export const Novedades = () => {
     const navigate = useNavigate();
 
     return (
-        <Section title='Novedades' path='/novedades' withHeaderBar>
+        <Section title='Novedades' path='/novedades' withHeaderBar withFooter>
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

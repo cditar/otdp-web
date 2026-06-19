@@ -1,15 +1,11 @@
-/* Contenedor de la sección novedades */
 .novedades-section {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
   background-color: #0A0A0A;
 }
 
-/* Título "novedades" */
 .novedades-title {
   font-family: 'Fraunces', Georgia, serif;
   font-size: 70px;

@@ -6,13 +6,12 @@ import './Press.css';
 export const Press = () => {
     return (
         <>
-            <Section title='Prensa' path='/prensa' withHeaderBar>
+            <Section title='Prensa' path='/prensa' withHeaderBar withFooter>
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, ease: 'easeInOut' }}
                 >
-                    <div className='press-container'>
                         <div className='press-grid'>
                             {PressData.map((item: any, index: number) => (
                                 <a key={index} href={item.link} target="_blank" rel="noopener noreferrer" className='press-card'>
@@ -27,7 +26,6 @@ export const Press = () => {
                                 </a>
                             ))}
                         </div>
-                    </div>
                 </motion.div>
             </Section>
         </>
