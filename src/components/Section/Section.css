@@ -19,7 +19,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  padding-top: 22px;
+  padding-bottom: 10px;
 }
+
+.section-arrow-title-container--centered {
+  justify-content: center;
+}
+
 .section-title {
   font-family: 'Fraunces', Georgia, serif;
   font-size: 70px;
@@ -27,8 +34,13 @@
   color: #B89960;
   padding: 0;
   letter-spacing: -0.05em;
-  margin: 10px 0px 0px 32px;
+  margin: 0px 0px 0px 42px;
   flex-shrink: 0;
+}
+
+.section-title--centered {
+  margin: 10px 0px 0px 0px;
+  text-align: center;
 }
 
 .section-arrow-back {
@@ -70,6 +82,10 @@
     letter-spacing: -0.05em;
     margin: 16px 0px 0px 32px;
     flex-shrink: 0;
+  }
+
+  .section-title--centered {
+    margin: 16px 0px 0px 0px;
   }
   
   .section-container--with-header {

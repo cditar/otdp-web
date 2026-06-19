@@ -12,25 +12,20 @@ export const MusicaPopular = () => {
     const navigate = useNavigate();
     return (
         <>
-            <Section title='¿QUÉ PASA CON LA MÚSICA POPULAR HOY?' titleColor='#ce3957' path='/que-pasa-con-la-musica-popular-hoy'>
-            <HeaderBar />
+            <Section titleCentered title='¿Qué pasa con la música popular hoy?' titleColor='#ce3957' path='/que-pasa-con-la-musica-popular-hoy' withHeaderBar>
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, ease: 'easeInOut' }}
                 >
-                    <HeaderBar />
                     <Timeline />
-
-                    <div className='musica-popular-container'>
-                        <h1 className='musica-popular-title'>¿Qué pasa con la música popular hoy?</h1>
-
-                        <div id="intro" className='musica-popular-section musica-popular-intro'>
+                        <div id="intro" className='musica-popular-section musica-popular-content'>
                             <p>
                                 En plena pandemia del año 2020, Juan I. Di Pasquale <b>se encuentra con una entrevista realizada en el diario “La Opinión”</b> a fines del año 1977 donde se convocaba a distintos referentes del <b>rock argentino y la música popular</b>.
-                                <br /> <i>La pregunta quedo resonando en él durante todo el aislamiento.</i>
-                               <br />
-                               En 2022  decide llevar adelante un <b>ciclo de conciertos mensuales</b> que duraría 3 años, en los cuales se propondría intentar preguntarla, invitando a <b>compartir escenario y música</b> a grandes referentes de la amplia música popular.
+                                <br /> 
+                                <i>La pregunta quedo resonando en él durante todo el aislamiento.</i>
+                                <br />
+                                En 2022  decide llevar adelante un <b>ciclo de conciertos mensuales</b> que duraría 3 años, en los cuales se propondría intentar preguntarla, invitando a <b>compartir escenario y música</b> a grandes referentes de la amplia música popular.
                             </p>
                             <img src={MusicaPopularOriginal} alt="Música Popular Nota" className='musica-popular-image' />
                         </div>
@@ -56,7 +51,6 @@ export const MusicaPopular = () => {
                             <img src={MusicaPopularImg} alt="Música Popular Disco" className='musica-popular-image-disk' onClick={() => navigate('/disco/musica-popular')} />
 
                         </div>
-                    </div>
                 </motion.div>
             </Section>
         </>

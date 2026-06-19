@@ -35,6 +35,20 @@ export const ScrollableMain = () => {
         };
     }, []);
 
+    useEffect(() => {
+        const hasNavigated = sessionStorage.getItem('hasNavigated');
+        
+        if (hasNavigated === 'true' && welcomeRef.current) {
+            const welcomeHeight = welcomeRef.current.offsetHeight;
+            window.scrollTo({
+                top: welcomeHeight,
+                behavior: 'smooth'
+            });
+        } else {
+            window.scrollTo(0, 0);
+        }
+    }, []);
+
     console.log(showHeader);
 
     return (
@@ -44,10 +58,8 @@ export const ScrollableMain = () => {
             <div ref={welcomeRef}>
                 <Welcome />
             </div>
-
             <News2 />
             <Discografia />
-            {/* <Cycle /> */}
             <div className="videos-section">
                 <h2 className="videos-sidebar-title">Videos</h2>
                 <Box

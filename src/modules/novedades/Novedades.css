@@ -3,30 +3,8 @@
     min-height: 100vh;
     background-color: #0A0A0A;
     display: flex;
+    margin-top: 20px;
     flex-direction: column;
-    padding-top: 45px;
-}
-
-.novedades-title {
-    font-family: 'Fraunces', Georgia, serif;
-    font-size: 60px;
-    font-weight: 400;
-    color: #ffc935;
-    padding-left: 20px;
-    letter-spacing: -0.05em;
-}
-
-.novedades-header {
-    position: sticky;
-    top: 45px;
-    display: flex;
-    height: 90px;
-    background-color: #0A0A0A;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    z-index: 10;
 }
 
 .novedades-hero {
@@ -45,7 +23,7 @@
 .novedades-hero-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: none;
     object-position: center;
 }
 

@@ -17,15 +17,9 @@ function App() {
   const { scrollYProgress } = useScroll();
 
   useEffect(() => {
-    return () => {
-      sessionStorage.setItem(`scrollPos-${location.pathname}`, window.scrollY.toString());
-    };
-  }, [location.pathname]);
-
-  useEffect(() => {
-    const scrollY = sessionStorage.getItem(`scrollPos-${location.pathname}`);
-    if (scrollY) {
-      window.scrollTo(0, parseInt(scrollY));
+    if (location.pathname !== '/') {
+      sessionStorage.setItem('hasNavigated', 'true');
+      window.scrollTo(0, 0);
     }
   }, [location.pathname]);
 

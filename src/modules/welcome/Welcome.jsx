@@ -10,7 +10,6 @@ export const Welcome = () => {
     const isPresent = useIsPresent();
     const isDesktop = useIsDesktop();
 
-
     return (
         <>
             {isDesktop ? (

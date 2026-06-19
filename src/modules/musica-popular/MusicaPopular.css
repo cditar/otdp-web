@@ -1,41 +1,5 @@
-.musica-popular-container {
-    width: 100vw;
-    min-height: 100vh;
-    background-color: #0A0A0A;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
-}
-
-.musica-popular-title {
-    font-family: 'Fraunces', Georgia, serif;
-    font-size: 60px;
-    font-weight: 400;
-    color: white;
-    letter-spacing: -0.05em;
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 0 20px;
-}
-
-.musica-popular-intro {
-    max-width: 900px;
-    padding: 0 40px;
-    color: white;
-    text-align: center;
-}
-
-.musica-popular-intro p {
-    font-family: 'Fraunces', Georgia, serif;
-    font-size: 15px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    color: #E0E0E0;
-    text-align: left;
-}
-
 .musica-popular-section {
+    margin-top: 60px;
     scroll-margin-top: 10px;
     display: flex;
     flex-direction: column;

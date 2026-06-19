@@ -1,26 +1,21 @@
 import { useNavigate } from 'react-router-dom';
 import './Novedades.css';
 import { motion } from 'framer-motion';
-import { HeaderBar } from '../../components/HeaderBar/HeaderBar';
 import MusicaPopularOriginal from '../../assets/discos/MusicaPopularOriginal.png';
-import Footer from '../../components/Footer/Footer';
 import { News2 } from '../news/News2';
+import { Section } from '../../components';
 
 export const Novedades = () => {
     const navigate = useNavigate();
 
     return (
+        <Section title='Novedades' path='/novedades' withHeaderBar>
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
         >
-            <HeaderBar />
             <div className='novedades-container'>
-                <div className='novedades-header'>
-                    <h1 className='novedades-title'>Novedades</h1>
-                </div>
-                
                 <div className='novedades-hero'>
                     <img 
                         src={MusicaPopularOriginal} 
@@ -46,7 +41,7 @@ export const Novedades = () => {
                     {/* Aquí irán las últimas novedades */}
                 </div>
             </div>
-            <Footer/>
         </motion.div>
+        </Section>
     )
 }

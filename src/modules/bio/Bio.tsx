@@ -4,8 +4,7 @@ import './Bio.css';
 
 export const Bio = () => {  
     return (
-        <Section title='BIO' path='/bio'>
-            <HeaderBar />
+        <Section title='Bio' path='/bio' withHeaderBar>
             <div className='bio-container'>
                 <div className='bio-content'>
                     <h1>Bio</h1>

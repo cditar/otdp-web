@@ -12,17 +12,16 @@ interface SectionProps {
     path?: string;
     withArrowBack?: boolean;
     withHeaderBar?: boolean;
+    titleCentered?: boolean;
 }
 
-export const Section = ({ children, title, titleColor, path, withArrowBack, withHeaderBar }: SectionProps) => {
+export const Section = ({ children, title, titleColor, path, withArrowBack, withHeaderBar, titleCentered }: SectionProps) => {
     const navigate = useNavigate();
 
     const handleNavigateHome = () => {
         if (path) {
-            sessionStorage.setItem('scrollPos-/', window.scrollY.toString());
             navigate(path);
         } else {
-            // Si no hay path definido, volver atrás en el historial
             navigate(-1);
         }
     };
@@ -30,7 +29,7 @@ export const Section = ({ children, title, titleColor, path, withArrowBack, with
     return (
         <div className={`section-container ${withHeaderBar ? 'section-container--with-header' : ''}`}>
             {withHeaderBar && <HeaderBar/>}
-            <div className="section-arrow-title-container">
+            <div className={`section-arrow-title-container ${titleCentered ? 'section-arrow-title-container--centered' : ''}`}>
                 {
                     withArrowBack &&
                     <button
@@ -40,7 +39,7 @@ export const Section = ({ children, title, titleColor, path, withArrowBack, with
                         <ArrowDownwardRounded />
                     </button>
                 }
-                {!!title && <div className='section-title' style={{ color: titleColor }}> {title} </div>}
+                {!!title && <div className={`section-title ${titleCentered ? 'section-title--centered' : ''}`} style={{ color: titleColor }}> {title} </div>}
             </div>
             <div className="section-content">
                 {children}
